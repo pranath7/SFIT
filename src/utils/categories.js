@@ -1,0 +1,60 @@
+// Category definitions with icons, descriptions, patterns, and badge classes
+export const CATEGORIES = [
+  {
+    id: 'kitchen-accessories',
+    name: 'Kitchen Accessories',
+    shortName: 'Kitchen',
+    description: 'Handles, knobs, pull bars & kitchen hardware',
+    pattern: 'geo-pattern-1',
+    badgeClass: 'badge-kitchen',
+    icon: 'kitchen',
+  },
+  {
+    id: 'sliding-fittings',
+    name: 'Sliding Fittings',
+    shortName: 'Sliding',
+    description: 'Wardrobe runners, glass door systems & track hardware',
+    pattern: 'geo-pattern-2',
+    badgeClass: 'badge-sliding',
+    icon: 'sliding',
+  },
+  {
+    id: 'furniture-fixtures',
+    name: 'Furniture Fixtures',
+    shortName: 'Furniture',
+    description: 'Hinges, channels, brackets & cabinet systems',
+    pattern: 'geo-pattern-3',
+    badgeClass: 'badge-furniture',
+    icon: 'furniture',
+  },
+  {
+    id: 'sofa-legs',
+    name: 'Sofa Legs',
+    shortName: 'Sofa',
+    description: 'Metal, wood-finish & chrome sofa & furniture legs',
+    pattern: 'geo-pattern-4',
+    badgeClass: 'badge-sofa',
+    icon: 'sofa',
+  },
+  {
+    id: 'bathroom-accessories',
+    name: 'Bathroom Accessories',
+    shortName: 'Bathroom',
+    description: 'Towel rails, holders, shower fittings & bath hardware',
+    pattern: 'geo-pattern-5',
+    badgeClass: 'badge-bathroom',
+    icon: 'bathroom',
+  },
+  {
+    id: 'profiles',
+    name: 'Profiles & Sections',
+    shortName: 'Profiles',
+    description: 'Aluminum, PVC & stainless steel architectural profiles',
+    pattern: 'geo-pattern-6',
+    badgeClass: 'badge-profiles',
+    icon: 'profiles',
+  },
+];
+
+export const getCategoryById = (id) => CATEGORIES.find((c) => c.id === id);
+export const getCategoryByName = (name) => CATEGORIES.find((c) => c.name === name);
