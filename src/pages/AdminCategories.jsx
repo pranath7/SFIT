@@ -37,7 +37,7 @@ const AdminCategories = () => {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="font-display text-2xl text-slate-800 mb-1">Categories</h1>
+          <h1 className="font-sans font-bold tracking-tight text-2xl text-slate-800 mb-1">Categories</h1>
           <p className="text-slate-500 text-sm">Manage your product categories.</p>
         </div>
         <button
@@ -65,7 +65,7 @@ const AdminCategories = () => {
                   <span className="px-2 py-0.5 bg-amber-50 text-amber-600 border border-amber-100/50 text-[10px] font-mono rounded uppercase">Custom</span>
                 )}
               </div>
-              <h3 className="font-display text-lg text-slate-800 mb-1">{cat.name}</h3>
+              <h3 className="font-sans font-bold tracking-tight text-lg text-slate-800 mb-1">{cat.name}</h3>
               <p className="text-slate-500 text-sm mb-4">{cat.description}</p>
               <div className="flex items-center gap-2">
                 <div className={`w-2 h-2 rounded-full ${count > 0 ? 'bg-blue-600' : 'bg-slate-300'}`} />
@@ -82,7 +82,7 @@ const AdminCategories = () => {
       {showAdd && (
         <div className="modal-overlay" onClick={() => setShowAdd(false)}>
           <div className="modal-card bg-white border border-slate-200" onClick={(e) => e.stopPropagation()}>
-            <h3 className="text-slate-800 font-display text-lg mb-4">Add Custom Category</h3>
+            <h3 className="text-slate-800 font-sans font-bold tracking-tight text-lg mb-4">Add Custom Category</h3>
             <form onSubmit={handleAddCategory} className="space-y-4">
               <div>
                 <label htmlFor="new-cat-name" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">

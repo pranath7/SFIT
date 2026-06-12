@@ -236,7 +236,7 @@ const AdminAddProduct = () => {
   return (
     <div className="max-w-3xl">
       <div className="mb-8">
-        <h1 className="font-display text-2xl text-slate-800 mb-1">
+        <h1 className="font-sans font-bold tracking-tight text-2xl text-slate-800 mb-1">
           {id ? 'Edit Product' : 'Add New Product'}
         </h1>
         <p className="text-slate-500 text-sm">

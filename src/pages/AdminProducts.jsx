@@ -49,7 +49,7 @@ const AdminProducts = () => {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="font-display text-2xl text-slate-800 mb-1">All Products</h1>
+          <h1 className="font-sans font-bold tracking-tight text-2xl text-slate-800 mb-1">All Products</h1>
           <p className="text-slate-500 text-sm">{products.length} total products</p>
         </div>
         <div className="flex gap-3">
@@ -258,7 +258,7 @@ const AdminProducts = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="text-slate-850 font-display text-lg">Confirm Delete</h3>
+                <h3 className="text-slate-850 font-sans font-bold tracking-tight text-lg">Confirm Delete</h3>
                 <p className="text-slate-600 text-sm">
                   {deleteModal === 'bulk'
                     ? `Delete ${selected.length} selected products?`

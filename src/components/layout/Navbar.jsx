@@ -37,17 +37,17 @@ const Navbar = () => {
     <>
       <nav
         id="navbar"
-        className={`fixed top-0 left-0 right-0 z-[10000] transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-[10000] transition-all duration-500 bg-white/95 backdrop-blur-md border-b border-slate-100 ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md border-b border-slate-200/60 shadow-sm'
-            : 'bg-transparent border-b border-transparent'
+            ? 'py-0 shadow-sm'
+            : 'py-1'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-20 lg:h-[90px]">
             {/* Logo */}
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollTo('#home'); }} className="flex items-center group" aria-label="SFIT Home">
-              <img src="/logo.png" alt="S-FIT Logo" className="h-10 lg:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
+              <img src="/logo.png" alt="S-FIT Logo" className="h-16 lg:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
             </a>
 
             {/* Desktop Nav Links */}
@@ -57,10 +57,10 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-                  className="text-slate-600 hover:text-blue-600 text-sm font-body tracking-wide transition-colors duration-300 relative group"
+                  className="text-charcoal hover:text-primary text-sm font-body tracking-wide transition-colors duration-300 relative group"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-blue-600 transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full" />
                 </a>
               ))}
             </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                className="px-5 py-2.5 bg-charcoal hover:bg-primary text-white text-sm font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Get Quote
               </a>
@@ -94,9 +94,9 @@ const Navbar = () => {
               aria-label="Toggle menu"
               aria-expanded={mobileOpen}
             >
-              <span className={`block w-6 h-[2px] bg-slate-800 transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
-              <span className={`block w-6 h-[2px] bg-slate-800 transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
-              <span className={`block w-6 h-[2px] bg-slate-800 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[5px]' : ''}`} />
+              <span className={`block w-6 h-[2px] bg-charcoal transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
+              <span className={`block w-6 h-[2px] bg-charcoal transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
+              <span className={`block w-6 h-[2px] bg-charcoal transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[5px]' : ''}`} />
             </button>
           </div>
         </div>
@@ -108,14 +108,14 @@ const Navbar = () => {
           mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-md" onClick={() => setMobileOpen(false)} />
-        <div className={`absolute top-16 left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-transform duration-500 ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className="absolute inset-0 bg-charcoal/40 backdrop-blur-md" onClick={() => setMobileOpen(false)} />
+        <div className={`absolute top-20 left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-transform duration-500 ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-              className="text-slate-800 hover:text-blue-600 text-lg font-display py-2 border-b border-slate-100"
+              className="text-charcoal hover:text-primary text-lg font-sans font-bold tracking-tight py-2 border-b border-slate-100"
             >
               {link.label}
             </a>
@@ -133,7 +133,7 @@ const Navbar = () => {
               href={getWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center py-3 rounded-lg bg-blue-600 text-white font-semibold"
+              className="flex-1 flex items-center justify-center py-3 rounded-lg bg-charcoal text-white font-semibold"
             >
               Get Quote
             </a>

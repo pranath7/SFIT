@@ -43,7 +43,7 @@ const AdminLogin = () => {
         {/* Login Card */}
         <form onSubmit={handleSubmit} className="bg-white border border-slate-200/80 rounded-2xl p-8 space-y-6 shadow-xl shadow-slate-100">
           <div>
-            <h2 className="font-display text-2xl text-slate-800 mb-1">Welcome back</h2>
+            <h2 className="font-sans font-bold tracking-tight text-2xl text-slate-800 mb-1">Welcome back</h2>
             <p className="text-slate-500 text-sm">Sign in to manage your product catalog.</p>
           </div>
 

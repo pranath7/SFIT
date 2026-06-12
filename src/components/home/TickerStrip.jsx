@@ -12,18 +12,20 @@ const TickerStrip = () => {
     'DRAWER CHANNELS',
   ];
 
-  const ticker = items.map((item) => `⬡ ${item}`).join(' · ');
-
   return (
-    <div className="w-full bg-slate-100 border-y border-slate-200/50 py-3.5 overflow-hidden relative">
+    <div className="w-full bg-[#f8fafc] border-y border-[#e2e8f0] py-4 overflow-hidden relative">
       <div className="marquee-container">
-        <div className="marquee-content gap-0">
-          <span className="text-slate-600 text-sm font-mono tracking-widest whitespace-nowrap px-4">
-            {ticker} · {ticker} · {ticker} ·{' '}
-          </span>
-          <span className="text-slate-600 text-sm font-mono tracking-widest whitespace-nowrap px-4" aria-hidden="true">
-            {ticker} · {ticker} · {ticker} ·{' '}
-          </span>
+        <div className="marquee-content gap-0 flex items-center">
+          {[1, 2, 3, 4].map((i) => (
+            <span key={i} className="text-charcoal text-xs font-mono tracking-widest whitespace-nowrap px-4 flex items-center gap-8">
+              {items.map((item) => (
+                <span key={item} className="flex items-center gap-8">
+                  <span className="text-primary">✦</span>
+                  <span>{item}</span>
+                </span>
+              ))}
+            </span>
+          ))}
         </div>
       </div>
     </div>

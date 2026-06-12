@@ -58,7 +58,7 @@ const AdminDashboard = () => {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="font-display text-2xl text-slate-800 mb-1">Dashboard</h1>
+        <h1 className="font-sans font-bold tracking-tight text-2xl text-slate-800 mb-1">Dashboard</h1>
         <p className="text-slate-500 text-sm">Overview of your product catalog.</p>
       </div>
 
@@ -71,7 +71,7 @@ const AdminDashboard = () => {
                 {stat.icon}
               </div>
             </div>
-            <div className="font-display text-3xl text-slate-800 mb-1">{stat.value}</div>
+            <div className="font-sans font-bold tracking-tight text-3xl text-slate-800 mb-1">{stat.value}</div>
             <div className="text-slate-500 text-sm">{stat.label}</div>
           </div>
         ))}
@@ -80,7 +80,7 @@ const AdminDashboard = () => {
       {/* Recent Products */}
       <div className="admin-card p-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="font-display text-lg text-slate-800">Recent Products</h2>
+          <h2 className="font-sans font-bold tracking-tight text-lg text-slate-800">Recent Products</h2>
           <a href="/admin/products" className="text-blue-600 text-sm hover:underline">View All →</a>
         </div>
 

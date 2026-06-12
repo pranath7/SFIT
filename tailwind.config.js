@@ -7,24 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: {
-          deep: '#050d1a',
-          dark: '#0a1628',
-          card: '#0f1e35',
-          mid: '#162a4a',
+        charcoal: '#1e293b', // slate-800
+        slate: {
+          light: '#f8fafc',  // slate-50
+          body: '#64748b',   // slate-500
+          border: '#e2e8f0', // slate-200
         },
-        accent: {
-          blue: '#1a6fff',
-          electric: '#4d9fff',
-          glow: 'rgba(26, 111, 255, 0.15)',
-        },
-        steel: '#8fa3c0',
-        mist: '#e8f0fe',
-        gold: '#c9a84c',
+        primary: '#2563eb',  // royal blue
         whatsapp: '#25D366',
+        accent: {
+          blue: '#3b82f6',
+          electric: '#60a5fa',
+          glow: 'rgba(37, 99, 235, 0.15)',
+        },
       },
       fontFamily: {
-        display: ['"DM Serif Display"', 'serif'],
+        display: ['"DM Sans"', 'sans-serif'], // Slate uses clean sans-serif for headings mostly
         body: ['"DM Sans"', 'sans-serif'],
         mono: ['"Space Grotesk"', 'monospace'],
       },
@@ -86,13 +84,13 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-cta': 'linear-gradient(135deg, #0a1628 0%, #1a6fff 100%)',
-        'gradient-card': 'linear-gradient(180deg, #0f1e35 0%, #0a1628 100%)',
+        'gradient-cta': 'linear-gradient(135deg, #F4F0EC 0%, #ffffff 100%)',
+        'gradient-card': 'linear-gradient(180deg, #ffffff 0%, #F4F0EC 100%)',
       },
       boxShadow: {
-        'glow-blue': '0 0 20px rgba(26, 111, 255, 0.3), 0 0 60px rgba(26, 111, 255, 0.1)',
-        'glow-blue-lg': '0 0 30px rgba(26, 111, 255, 0.4), 0 0 80px rgba(26, 111, 255, 0.15)',
-        'card-hover': '0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(26, 111, 255, 0.15)',
+        'glow-blue': '0 0 20px rgba(205, 162, 116, 0.15), 0 0 60px rgba(205, 162, 116, 0.05)',
+        'glow-blue-lg': '0 0 30px rgba(205, 162, 116, 0.2), 0 0 80px rgba(205, 162, 116, 0.08)',
+        'card-hover': '0 8px 32px rgba(41, 47, 54, 0.04), 0 0 20px rgba(205, 162, 116, 0.08)',
       },
     },
   },
