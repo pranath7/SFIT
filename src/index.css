@@ -14,13 +14,13 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #1a6fff #0a1628;
+  scrollbar-color: #2563eb #f1f5f9;
 }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: #050d1a;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #0f172a;
   overflow-x: hidden;
   cursor: none;
 }
@@ -35,10 +35,10 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a1628;
+  background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1a6fff;
+  background: #2563eb;
   border-radius: 3px;
 }
 
@@ -51,8 +51,8 @@ body {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: #050d1a;
-  border: 2px solid #4d9fff;
+  background: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.20);
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
@@ -67,9 +67,9 @@ body {
   height: 40px;
   margin-top: -20px;
   margin-left: -20px;
-  background: rgba(26, 111, 255, 0.1);
-  border-width: 2px;
-  border-color: #1a6fff;
+  background: rgba(37, 99, 235, 0.06);
+  border-width: 1.5px;
+  border-color: #2563eb;
 }
 
 @media (pointer: coarse) {
@@ -83,10 +83,10 @@ body {
   position: absolute;
   inset: -100px;
   background-image:
-    linear-gradient(rgba(26, 111, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(26, 111, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(rgba(26, 111, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(26, 111, 255, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(37, 99, 235, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(37, 99, 235, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.04) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   transform: translate3d(0, 0, 0);
   will-change: transform;
@@ -129,7 +129,7 @@ body {
 }
 
 .card-border-trace:hover::before {
-  border-color: #1a6fff;
+  border-color: #2563eb;
   animation: borderDraw 0.6s ease forwards;
 }
 
@@ -163,8 +163,8 @@ body {
   left: 10%;
   right: 10%;
   height: 1px;
-  background: #1a6fff;
-  box-shadow: 0 0 20px rgba(26, 111, 255, 0.4), 0 0 60px rgba(26, 111, 255, 0.2);
+  background: #2563eb;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4), 0 0 60px rgba(37, 99, 235, 0.2);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -177,7 +177,7 @@ body {
 .loading-screen {
   position: fixed;
   inset: 0;
-  background: #050d1a;
+  background: #ffffff;
   z-index: 100000;
   display: flex;
   flex-direction: column;
@@ -190,7 +190,7 @@ body {
   top: 0;
   left: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #1a6fff, #4d9fff, #1a6fff, transparent);
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, #2563eb, transparent);
   width: 100%;
   transform: scaleX(0);
   transform-origin: left;
@@ -263,41 +263,41 @@ body {
 
 /* ===== GLASS MORPHISM ===== */
 .glass {
-  background: rgba(15, 30, 53, 0.6);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(26, 111, 255, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 /* ===== ADMIN STYLES ===== */
 .admin-sidebar {
-  background: linear-gradient(180deg, #0a1628 0%, #050d1a 100%);
-  border-right: 1px solid rgba(26, 111, 255, 0.1);
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
 }
 
 .admin-topbar {
-  background: rgba(10, 22, 40, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(26, 111, 255, 0.1);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .admin-card {
-  background: #0f1e35;
-  border: 1px solid rgba(26, 111, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .admin-card:hover {
-  border-color: rgba(26, 111, 255, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .admin-input {
-  background: #0a1628;
-  border: 1px solid rgba(26, 111, 255, 0.15);
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
   border-radius: 8px;
-  color: #ffffff;
+  color: #0f172a;
   padding: 10px 14px;
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
@@ -307,12 +307,12 @@ body {
 }
 
 .admin-input:focus {
-  border-color: #1a6fff;
-  box-shadow: 0 0 0 3px rgba(26, 111, 255, 0.1);
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .admin-input::placeholder {
-  color: #8fa3c0;
+  color: #94a3b8;
   opacity: 0.6;
 }
 
@@ -321,14 +321,14 @@ body {
   position: relative;
   width: 44px;
   height: 24px;
-  background: #162a4a;
+  background: #e2e8f0;
   border-radius: 12px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .toggle-switch.active {
-  background: #1a6fff;
+  background: #2563eb;
 }
 
 .toggle-switch::after {
@@ -349,32 +349,32 @@ body {
 
 /* ===== GEOMETRIC PATTERNS (per category) ===== */
 .geo-pattern-1 {
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(26, 111, 255, 0.03) 10px, rgba(26, 111, 255, 0.03) 11px);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(37, 99, 235, 0.02) 10px, rgba(37, 99, 235, 0.02) 11px);
 }
 .geo-pattern-2 {
-  background-image: radial-gradient(circle at 20px 20px, rgba(26, 111, 255, 0.04) 1px, transparent 1px);
+  background-image: radial-gradient(circle at 20px 20px, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 .geo-pattern-3 {
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(26, 111, 255, 0.03) 15px, rgba(26, 111, 255, 0.03) 16px),
-    repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(26, 111, 255, 0.03) 15px, rgba(26, 111, 255, 0.03) 16px);
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(37, 99, 235, 0.02) 15px, rgba(37, 99, 235, 0.02) 16px),
+    repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(37, 99, 235, 0.02) 15px, rgba(37, 99, 235, 0.02) 16px);
 }
 .geo-pattern-4 {
-  background-image: repeating-conic-gradient(rgba(26, 111, 255, 0.03) 0% 25%, transparent 0% 50%);
+  background-image: repeating-conic-gradient(rgba(37, 99, 235, 0.02) 0% 25%, transparent 0% 50%);
   background-size: 30px 30px;
 }
 .geo-pattern-5 {
-  background-image: linear-gradient(30deg, rgba(26, 111, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(26, 111, 255, 0.03) 87.5%),
-    linear-gradient(150deg, rgba(26, 111, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(26, 111, 255, 0.03) 87.5%);
+  background-image: linear-gradient(30deg, rgba(37, 99, 235, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(37, 99, 235, 0.02) 87.5%),
+    linear-gradient(150deg, rgba(37, 99, 235, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(37, 99, 235, 0.02) 87.5%);
   background-size: 40px 70px;
 }
 .geo-pattern-6 {
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(26, 111, 255, 0.03) 8px, rgba(26, 111, 255, 0.03) 9px);
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(37, 99, 235, 0.02) 8px, rgba(37, 99, 235, 0.02) 9px);
 }
 
 /* ===== DRAG & DROP ZONE ===== */
 .drop-zone {
-  border: 2px dashed rgba(26, 111, 255, 0.3);
+  border: 2px dashed rgba(37, 99, 235, 0.3);
   border-radius: 12px;
   padding: 40px;
   text-align: center;
@@ -384,8 +384,8 @@ body {
 
 .drop-zone:hover,
 .drop-zone.drag-over {
-  border-color: #1a6fff;
-  background: rgba(26, 111, 255, 0.05);
+  border-color: #2563eb;
+  background: rgba(37, 99, 235, 0.04);
 }
 
 /* ===== RESPONSIVE BOTTOM BAR ===== */
@@ -395,8 +395,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #0a1628;
-    border-top: 1px solid rgba(26, 111, 255, 0.15);
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
     padding: 8px 16px;
     display: flex;
     gap: 8px;
@@ -412,15 +412,15 @@ body {
 }
 
 .data-table thead th {
-  background: #0a1628;
+  background: #f8fafc;
   padding: 12px 16px;
   text-align: left;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #8fa3c0;
-  border-bottom: 1px solid rgba(26, 111, 255, 0.1);
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
   position: sticky;
   top: 0;
 }
@@ -430,21 +430,21 @@ body {
 }
 
 .data-table tbody tr:hover {
-  background: rgba(26, 111, 255, 0.05);
+  background: #f1f5f9;
 }
 
 .data-table tbody td {
   padding: 12px 16px;
-  border-bottom: 1px solid rgba(26, 111, 255, 0.05);
+  border-bottom: 1px solid #f1f5f9;
   font-size: 14px;
-  color: #e8f0fe;
+  color: #334155;
 }
 
 /* ===== CONFIRMATION MODAL ===== */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(5, 13, 26, 0.8);
+  background: rgba(15, 23, 42, 0.4);
   backdrop-filter: blur(4px);
   z-index: 50000;
   display: flex;
@@ -459,8 +459,8 @@ body {
 }
 
 .modal-card {
-  background: #0f1e35;
-  border: 1px solid rgba(26, 111, 255, 0.15);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 32px;
   max-width: 420px;
@@ -482,9 +482,9 @@ body {
 .stagger-6 { animation-delay: 400ms; }
 
 /* ===== CATEGORY BADGE COLORS ===== */
-.badge-kitchen { background: rgba(26, 111, 255, 0.15); color: #4d9fff; }
-.badge-sliding { background: rgba(77, 159, 255, 0.15); color: #7bb8ff; }
-.badge-furniture { background: rgba(201, 168, 76, 0.15); color: #c9a84c; }
-.badge-sofa { background: rgba(111, 207, 151, 0.15); color: #6fcf97; }
-.badge-bathroom { background: rgba(155, 89, 182, 0.15); color: #bb6bd9; }
-.badge-profiles { background: rgba(143, 163, 192, 0.15); color: #8fa3c0; }
+.badge-kitchen { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
+.badge-sliding { background: rgba(59, 130, 246, 0.08); color: #3b82f6; }
+.badge-furniture { background: rgba(180, 83, 9, 0.08); color: #b45309; }
+.badge-sofa { background: rgba(21, 128, 61, 0.08); color: #15803d; }
+.badge-bathroom { background: rgba(109, 40, 217, 0.08); color: #6d28d9; }
+.badge-profiles { background: rgba(71, 85, 105, 0.08); color: #475569; }

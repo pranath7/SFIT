@@ -58,20 +58,20 @@ const About = () => {
   ];
 
   return (
-    <section id="about" ref={sectionRef} className="relative py-24 bg-navy-dark overflow-hidden">
-      <div className="blueprint-grid opacity-20" />
+    <section id="about" ref={sectionRef} className="relative py-24 bg-slate-50 border-t border-slate-200/80 overflow-hidden">
+      <div className="blueprint-grid" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 section-reveal">
           <span className="text-accent-blue text-xs font-mono tracking-[0.3em] uppercase">About SFIT</span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-white mt-3">Built for Builders</h2>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-slate-900 mt-3">Built for Builders</h2>
           <div className="w-16 h-[2px] bg-accent-blue mx-auto mt-6" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left — Quote Card */}
           <div className="section-reveal">
-            <div className="relative bg-navy-card rounded-2xl p-10 border border-accent-blue/10 geo-pattern-3 overflow-hidden">
+            <div className="relative bg-white rounded-2xl p-10 border border-slate-200 shadow-sm geo-pattern-3 overflow-hidden">
               {/* Decorative corner */}
               <div className="absolute top-0 right-0 w-24 h-24">
                 <svg className="w-full h-full text-accent-blue/10" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
@@ -88,11 +88,11 @@ const About = () => {
                 <svg className="w-10 h-10 text-accent-blue/20 mb-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609L9.978 5.15c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z"/>
                 </svg>
-                <blockquote className="font-display text-2xl sm:text-3xl text-white italic leading-snug mb-8">
+                <blockquote className="font-display text-2xl sm:text-3xl text-slate-800 italic leading-snug mb-8">
                   Built for builders.<br />Designed for designers.
                 </blockquote>
 
-                <div className="space-y-4 text-steel text-sm leading-relaxed">
+                <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
                   <p>
                     SFIT was founded in Chennai with a singular vision: to supply India's builders, architects, and interior designers with the finest hardware and fittings — at prices that make sense for every project scale.
                   </p>
@@ -105,13 +105,13 @@ const About = () => {
                 </div>
 
                 {/* Founder signature */}
-                <div className="mt-8 pt-6 border-t border-accent-blue/10 flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-accent-blue/10 border border-accent-blue/20 flex items-center justify-center">
-                    <span className="font-display text-accent-electric text-sm">S</span>
+                <div className="mt-8 pt-6 border-t border-slate-200/60 flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center">
+                    <span className="font-display text-blue-600 text-sm">S</span>
                   </div>
                   <div>
-                    <div className="text-white text-sm font-semibold">SFIT Team</div>
-                    <div className="text-steel/60 text-xs font-mono">Chennai, India</div>
+                    <div className="text-slate-800 text-sm font-semibold">SFIT Team</div>
+                    <div className="text-slate-400 text-xs font-mono">Chennai, India</div>
                   </div>
                 </div>
               </div>
@@ -123,18 +123,18 @@ const About = () => {
             {usps.map((usp, index) => (
               <div
                 key={usp.title}
-                className="section-reveal group bg-navy-card rounded-xl p-6 border border-accent-blue/5 hover:border-accent-blue/20 transition-all duration-500 hover:-translate-y-0.5"
+                className="section-reveal group bg-white rounded-xl p-6 border border-slate-200/80 shadow-sm hover:border-blue-200 transition-all duration-500 hover:-translate-y-0.5"
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue flex-shrink-0 group-hover:bg-accent-blue/20 transition-colors duration-300">
+                  <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0 group-hover:bg-blue-100 transition-colors duration-300">
                     {usp.icon}
                   </div>
                   <div>
-                    <h4 className="font-display text-lg text-white mb-1 group-hover:text-accent-electric transition-colors">
+                    <h4 className="font-display text-lg text-slate-800 mb-1 group-hover:text-blue-600 transition-colors">
                       {usp.title}
                     </h4>
-                    <p className="text-steel text-sm leading-relaxed">{usp.description}</p>
+                    <p className="text-slate-500 text-sm leading-relaxed">{usp.description}</p>
                   </div>
                 </div>
               </div>

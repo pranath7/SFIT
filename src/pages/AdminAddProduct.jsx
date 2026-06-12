@@ -236,10 +236,10 @@ const AdminAddProduct = () => {
   return (
     <div className="max-w-3xl">
       <div className="mb-8">
-        <h1 className="font-display text-2xl text-white mb-1">
+        <h1 className="font-display text-2xl text-slate-800 mb-1">
           {id ? 'Edit Product' : 'Add New Product'}
         </h1>
-        <p className="text-steel text-sm">
+        <p className="text-slate-500 text-sm">
           {id ? 'Update product details below.' : 'Fill in the details to add a new product to your catalog.'}
         </p>
       </div>
@@ -247,7 +247,7 @@ const AdminAddProduct = () => {
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Product Name */}
         <div>
-          <label htmlFor="product-name" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+          <label htmlFor="product-name" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
             Product Name <span className="text-red-400">*</span>
           </label>
           <input
@@ -263,14 +263,14 @@ const AdminAddProduct = () => {
 
         {/* Category */}
         <div>
-          <label htmlFor="product-category" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+          <label htmlFor="product-category" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
             Category
           </label>
           <select
             id="product-category"
             value={form.category}
             onChange={(e) => handleChange('category', e.target.value)}
-            className="admin-input appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%238fa3c0%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22m6%209%206%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_12px_center] bg-[length:20px]"
+            className="admin-input appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2364748b%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22m6%209%206%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_12px_center] bg-[length:20px]"
           >
             {CATEGORIES.map((cat) => (
               <option key={cat.id} value={cat.id}>{cat.name}</option>
@@ -280,7 +280,7 @@ const AdminAddProduct = () => {
 
         {/* Description */}
         <div>
-          <label htmlFor="product-description" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+          <label htmlFor="product-description" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
             Short Description
           </label>
           <textarea
@@ -292,21 +292,21 @@ const AdminAddProduct = () => {
             maxLength={200}
           />
           <div className="mt-1 text-right">
-            <span className={`text-xs font-mono ${charCount > 180 ? 'text-yellow-400' : 'text-steel/40'}`}>
+            <span className={`text-xs font-mono ${charCount > 180 ? 'text-amber-600' : 'text-slate-400'}`}>
               {charCount}/200
             </span>
           </div>
         </div>
 
         {/* Pricing Block */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-5 bg-navy-dark/40 rounded-xl border border-accent-blue/5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-5 bg-slate-50 rounded-xl border border-slate-200">
           {/* Cost Price */}
           <div>
-            <label htmlFor="product-cp" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+            <label htmlFor="product-cp" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
               Cost Price (CP)
             </label>
             <div className="relative">
-              <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-steel/50 font-mono">₹</span>
+              <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono">₹</span>
               <input
                 id="product-cp"
                 type="number"
@@ -321,7 +321,7 @@ const AdminAddProduct = () => {
 
           {/* Markup % */}
           <div>
-            <label className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+            <label className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
               Markup Percentage
             </label>
             <div className="flex items-center gap-2">
@@ -338,8 +338,8 @@ const AdminAddProduct = () => {
                 onClick={() => handleMarkupChange(25)}
                 className={`px-3 py-2 rounded-lg text-xs font-mono transition-colors border ${
                   markupPercent === 25
-                    ? 'bg-accent-blue text-white border-accent-blue'
-                    : 'bg-navy-dark text-steel border-accent-blue/10 hover:border-accent-blue/30'
+                    ? 'bg-blue-600 text-white border-blue-600'
+                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
                 }`}
               >
                 25%
@@ -349,8 +349,8 @@ const AdminAddProduct = () => {
                 onClick={() => handleMarkupChange(30)}
                 className={`px-3 py-2 rounded-lg text-xs font-mono transition-colors border ${
                   markupPercent === 30
-                    ? 'bg-accent-blue text-white border-accent-blue'
-                    : 'bg-navy-dark text-steel border-accent-blue/10 hover:border-accent-blue/30'
+                    ? 'bg-blue-600 text-white border-blue-600'
+                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
                 }`}
               >
                 30%
@@ -360,17 +360,17 @@ const AdminAddProduct = () => {
 
           {/* Selling Price */}
           <div>
-            <label htmlFor="product-sp" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+            <label htmlFor="product-sp" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
               Selling Price (SP) <span className="text-red-400">*</span>
             </label>
             <div className="relative">
-              <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-steel/50 font-mono">₹</span>
+              <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono">₹</span>
               <input
                 id="product-sp"
                 type="number"
                 value={form.price}
                 onChange={(e) => handleChange('price', e.target.value)}
-                className="admin-input pl-8 font-semibold text-accent-electric border-accent-blue/20"
+                className="admin-input pl-8 font-semibold text-blue-600 border-slate-200"
                 placeholder="0"
                 min="0"
                 required
@@ -381,7 +381,7 @@ const AdminAddProduct = () => {
 
         {/* Image Upload */}
         <div>
-          <label className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+          <label className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
             Product Images
           </label>
 
@@ -397,21 +397,21 @@ const AdminAddProduct = () => {
           >
             {uploadingImages ? (
               <div className="text-center py-4">
-                <svg className="w-10 h-10 text-accent-electric mx-auto mb-3 animate-spin" fill="none" viewBox="0 0 24 24">
+                <svg className="w-10 h-10 text-blue-600 mx-auto mb-3 animate-spin" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
                 </svg>
-                <p className="text-accent-electric text-sm font-medium">Uploading images to cloud...</p>
+                <p className="text-blue-600 text-sm font-medium">Uploading images to cloud...</p>
               </div>
             ) : (
               <>
-                <svg className="w-10 h-10 text-accent-blue/40 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                <svg className="w-10 h-10 text-blue-600/40 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"/>
                 </svg>
-                <p className="text-steel text-sm mb-1">
-                  Drag & drop images here, or <span className="text-accent-electric">browse</span>
+                <p className="text-slate-600 text-sm mb-1">
+                  Drag & drop images here, or <span className="text-blue-600">browse</span>
                 </p>
-                <p className="text-steel/40 text-xs">Supports JPG, PNG, WebP</p>
+                <p className="text-slate-400 text-xs">Supports JPG, PNG, WebP</p>
               </>
             )}
           </div>
@@ -429,7 +429,7 @@ const AdminAddProduct = () => {
           {form.images.length > 0 && (
             <div className="grid grid-cols-4 gap-3 mt-4">
               {form.images.map((img, index) => (
-                <div key={index} className="relative group aspect-square rounded-lg overflow-hidden bg-navy-dark">
+                <div key={index} className="relative group aspect-square rounded-lg overflow-hidden bg-slate-100 border border-slate-200">
                   <img src={img} alt={`Preview ${index + 1}`} className="w-full h-full object-cover" />
                   <button
                     type="button"
@@ -442,7 +442,7 @@ const AdminAddProduct = () => {
                     </svg>
                   </button>
                   {index === 0 && (
-                    <span className="absolute bottom-1 left-1 px-2 py-0.5 bg-accent-blue/80 text-white text-[9px] font-mono rounded uppercase">Cover</span>
+                    <span className="absolute bottom-1 left-1 px-2 py-0.5 bg-blue-600/80 text-white text-[9px] font-mono rounded uppercase">Cover</span>
                   )}
                 </div>
               ))}
@@ -453,10 +453,10 @@ const AdminAddProduct = () => {
         {/* Toggles */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Featured Toggle */}
-          <div className="flex items-center justify-between p-4 bg-navy-dark/50 rounded-xl border border-accent-blue/5">
+          <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-200">
             <div>
-              <div className="text-white text-sm font-medium">Featured Product</div>
-              <div className="text-steel/60 text-xs">Highlight on homepage</div>
+              <div className="text-slate-800 text-sm font-medium">Featured Product</div>
+              <div className="text-slate-400 text-xs">Highlight on homepage</div>
             </div>
             <button
               type="button"
@@ -469,10 +469,10 @@ const AdminAddProduct = () => {
           </div>
 
           {/* Status Toggle */}
-          <div className="flex items-center justify-between p-4 bg-navy-dark/50 rounded-xl border border-accent-blue/5">
+          <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-200">
             <div>
-              <div className="text-white text-sm font-medium">Status</div>
-              <div className="text-steel/60 text-xs">
+              <div className="text-slate-800 text-sm font-medium">Status</div>
+              <div className="text-slate-400 text-xs">
                 {form.status === 'published' ? 'Visible on public site' : 'Hidden from public'}
               </div>
             </div>
@@ -492,7 +492,7 @@ const AdminAddProduct = () => {
           <button
             type="submit"
             disabled={saving || !form.name.trim()}
-            className="px-8 py-3 bg-accent-blue hover:bg-accent-electric text-white font-semibold rounded-lg transition-all duration-300 shadow-glow-blue hover:shadow-glow-blue-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
             {saving ? (
               <>
@@ -514,7 +514,7 @@ const AdminAddProduct = () => {
           <button
             type="button"
             onClick={() => navigate('/admin/products')}
-            className="px-6 py-3 text-steel hover:text-white border border-accent-blue/10 hover:border-accent-blue/20 rounded-lg transition-all duration-300"
+            className="px-6 py-3 text-slate-500 hover:text-slate-800 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 rounded-lg transition-all duration-300"
           >
             Cancel
           </button>

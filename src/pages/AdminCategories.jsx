@@ -37,12 +37,12 @@ const AdminCategories = () => {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="font-display text-2xl text-white mb-1">Categories</h1>
-          <p className="text-steel text-sm">Manage your product categories.</p>
+          <h1 className="font-display text-2xl text-slate-800 mb-1">Categories</h1>
+          <p className="text-slate-500 text-sm">Manage your product categories.</p>
         </div>
         <button
           onClick={() => setShowAdd(true)}
-          className="flex items-center gap-2 px-5 py-2 bg-accent-blue hover:bg-accent-electric text-white text-sm font-semibold rounded-lg transition-all duration-300 shadow-glow-blue"
+          className="flex items-center gap-2 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 shadow-sm"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
@@ -58,18 +58,18 @@ const AdminCategories = () => {
           return (
             <div key={cat.id} className={`admin-card p-6 ${cat.pattern}`}>
               <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 text-accent-blue/60">
+                <div className="w-12 h-12 text-blue-600/60">
                   {CategoryIcons[cat.icon] || CategoryIcons.kitchen}
                 </div>
                 {cat.isCustom && (
-                  <span className="px-2 py-0.5 bg-gold/10 text-gold text-[10px] font-mono rounded uppercase">Custom</span>
+                  <span className="px-2 py-0.5 bg-amber-50 text-amber-600 border border-amber-100/50 text-[10px] font-mono rounded uppercase">Custom</span>
                 )}
               </div>
-              <h3 className="font-display text-lg text-white mb-1">{cat.name}</h3>
-              <p className="text-steel text-sm mb-4">{cat.description}</p>
+              <h3 className="font-display text-lg text-slate-800 mb-1">{cat.name}</h3>
+              <p className="text-slate-500 text-sm mb-4">{cat.description}</p>
               <div className="flex items-center gap-2">
-                <div className={`w-2 h-2 rounded-full ${count > 0 ? 'bg-accent-electric' : 'bg-steel/30'}`} />
-                <span className="text-steel/60 text-xs font-mono">
+                <div className={`w-2 h-2 rounded-full ${count > 0 ? 'bg-blue-600' : 'bg-slate-300'}`} />
+                <span className="text-slate-400 text-xs font-mono">
                   {count} {count === 1 ? 'product' : 'products'}
                 </span>
               </div>
@@ -81,11 +81,11 @@ const AdminCategories = () => {
       {/* Add Category Modal */}
       {showAdd && (
         <div className="modal-overlay" onClick={() => setShowAdd(false)}>
-          <div className="modal-card" onClick={(e) => e.stopPropagation()}>
-            <h3 className="text-white font-display text-lg mb-4">Add Custom Category</h3>
+          <div className="modal-card bg-white border border-slate-200" onClick={(e) => e.stopPropagation()}>
+            <h3 className="text-slate-800 font-display text-lg mb-4">Add Custom Category</h3>
             <form onSubmit={handleAddCategory} className="space-y-4">
               <div>
-                <label htmlFor="new-cat-name" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+                <label htmlFor="new-cat-name" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
                   Category Name
                 </label>
                 <input
@@ -99,7 +99,7 @@ const AdminCategories = () => {
                 />
               </div>
               <div>
-                <label htmlFor="new-cat-desc" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">
+                <label htmlFor="new-cat-desc" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
                   Description
                 </label>
                 <input
@@ -114,14 +114,14 @@ const AdminCategories = () => {
               <div className="flex gap-3 pt-2">
                 <button
                   type="submit"
-                  className="flex-1 py-2.5 bg-accent-blue hover:bg-accent-electric text-white font-semibold rounded-lg transition-colors"
+                  className="flex-1 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors shadow-sm"
                 >
                   Add Category
                 </button>
                 <button
                   type="button"
                   onClick={() => setShowAdd(false)}
-                  className="flex-1 py-2.5 border border-accent-blue/10 text-steel hover:text-white rounded-lg transition-colors"
+                  className="flex-1 py-2.5 border border-slate-200 text-slate-500 hover:text-slate-800 hover:bg-slate-50 rounded-lg transition-colors"
                 >
                   Cancel
                 </button>

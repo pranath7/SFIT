@@ -33,31 +33,31 @@ const HomePage = () => {
           <TickerStrip />
 
           {/* Divider */}
-          <SectionDivider color="#050d1a" />
+          <SectionDivider color="#f8fafc" />
 
           {/* 3. Categories */}
           <Categories />
 
           {/* Divider */}
-          <SectionDivider color="#0a1628" flip />
+          <SectionDivider color="#f8fafc" flip />
 
           {/* 4. Customer Reviews */}
           <Reviews />
 
           {/* Divider */}
-          <SectionDivider color="#050d1a" />
+          <SectionDivider color="#f8fafc" />
 
           {/* 5. Products */}
           <Products />
 
           {/* Divider */}
-          <SectionDivider color="#0a1628" flip />
+          <SectionDivider color="#f8fafc" flip />
 
           {/* 6. About */}
           <About />
 
           {/* Divider */}
-          <SectionDivider color="#050d1a" />
+          <SectionDivider color="#f8fafc" />
 
           {/* 7. CTA Banner */}
           <CTABanner />

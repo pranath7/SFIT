@@ -7,8 +7,8 @@ const AdminLayout = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-navy-deep flex items-center justify-center">
-        <div className="w-8 h-8 border-2 border-accent-blue/30 border-t-accent-blue rounded-full animate-spin" />
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-blue-200 border-t-blue-600 rounded-full animate-spin" />
       </div>
     );
   }
@@ -63,15 +63,15 @@ const AdminLayout = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-navy-deep flex">
+    <div className="min-h-screen bg-slate-50 flex">
       {/* Sidebar */}
-      <aside className="admin-sidebar w-64 fixed top-0 left-0 bottom-0 z-50 flex flex-col">
+      <aside className="admin-sidebar w-64 fixed top-0 left-0 bottom-0 z-50 flex flex-col bg-white border-r border-slate-200">
         {/* Logo */}
-        <div className="px-6 py-5 border-b border-accent-blue/10 flex items-center justify-between">
+        <div className="px-6 py-5 border-b border-slate-100 flex items-center justify-between">
           <a href="/" className="flex items-center gap-2">
             <img src="/logo.png" alt="S-FIT Logo" className="h-8 w-auto object-contain" />
           </a>
-          <span className="text-accent-electric text-[9px] tracking-[0.15em] uppercase font-mono border border-accent-electric/20 rounded px-1.5 py-0.5 bg-accent-electric/5">Admin</span>
+          <span className="text-blue-600 text-[9px] tracking-[0.15em] uppercase font-mono border border-blue-200 rounded px-1.5 py-0.5 bg-blue-50">Admin</span>
         </div>
 
         {/* Nav */}
@@ -83,8 +83,8 @@ const AdminLayout = () => {
               className={({ isActive }) =>
                 `flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-body transition-all duration-200 ${
                   isActive
-                    ? 'bg-accent-blue/10 text-accent-electric border border-accent-blue/20'
-                    : 'text-steel hover:text-white hover:bg-navy-card'
+                    ? 'bg-blue-50 text-blue-600 border border-blue-100/50'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
                 }`
               }
             >
@@ -98,7 +98,7 @@ const AdminLayout = () => {
         <div className="px-3 pb-4">
           <a
             href="/"
-            className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-steel text-sm hover:text-white hover:bg-navy-card transition-all duration-200"
+            className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-slate-600 text-sm hover:text-slate-900 hover:bg-slate-50 transition-all duration-200"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
@@ -111,14 +111,14 @@ const AdminLayout = () => {
       {/* Main Content */}
       <div className="flex-1 ml-64">
         {/* Top Bar */}
-        <header className="admin-topbar sticky top-0 z-40 px-8 py-4 flex items-center justify-between">
+        <header className="admin-topbar sticky top-0 z-40 px-8 py-4 flex items-center justify-between bg-white border-b border-slate-200">
           <div>
-            <span className="text-white text-sm font-body">Welcome back, </span>
-            <span className="text-accent-electric text-sm font-semibold">Admin</span>
+            <span className="text-slate-600 text-sm font-body">Welcome back, </span>
+            <span className="text-blue-600 text-sm font-semibold">Admin</span>
           </div>
           <button
             onClick={handleLogout}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-steel text-sm hover:text-white hover:bg-navy-card border border-accent-blue/10 hover:border-accent-blue/20 transition-all duration-200"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-slate-600 text-sm hover:text-slate-900 hover:bg-slate-50 border border-slate-200 hover:border-slate-300 transition-all duration-200"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"/>

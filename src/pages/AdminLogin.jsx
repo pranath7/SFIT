@@ -28,7 +28,7 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen bg-navy-deep flex items-center justify-center px-4 relative overflow-hidden">
+    <div className="min-h-screen bg-slate-50 flex items-center justify-center px-4 relative overflow-hidden">
       {/* Background */}
       <div className="blueprint-grid opacity-30" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-blue/5 rounded-full blur-[150px]" />
@@ -37,19 +37,19 @@ const AdminLogin = () => {
         {/* Logo */}
         <div className="text-center mb-8 flex flex-col items-center">
           <img src="/logo.png" alt="S-FIT Logo" className="h-16 w-auto object-contain mb-3" />
-          <p className="text-steel text-sm font-mono tracking-widest uppercase">Admin Portal</p>
+          <p className="text-slate-500 text-sm font-mono tracking-widest uppercase">Admin Portal</p>
         </div>
 
         {/* Login Card */}
-        <form onSubmit={handleSubmit} className="bg-navy-card border border-accent-blue/10 rounded-2xl p-8 space-y-6">
+        <form onSubmit={handleSubmit} className="bg-white border border-slate-200/80 rounded-2xl p-8 space-y-6 shadow-xl shadow-slate-100">
           <div>
-            <h2 className="font-display text-2xl text-white mb-1">Welcome back</h2>
-            <p className="text-steel text-sm">Sign in to manage your product catalog.</p>
+            <h2 className="font-display text-2xl text-slate-800 mb-1">Welcome back</h2>
+            <p className="text-slate-500 text-sm">Sign in to manage your product catalog.</p>
           </div>
 
           {/* Error */}
           {error && (
-            <div className="flex items-center gap-2 px-4 py-3 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
+            <div className="flex items-center gap-2 px-4 py-3 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm">
               <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/>
               </svg>
@@ -59,7 +59,7 @@ const AdminLogin = () => {
 
           {/* Username */}
           <div>
-            <label htmlFor="admin-username" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">Username</label>
+            <label htmlFor="admin-username" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">Username</label>
             <input
               id="admin-username"
               type="text"
@@ -74,7 +74,7 @@ const AdminLogin = () => {
 
           {/* Password */}
           <div>
-            <label htmlFor="admin-password" className="block text-steel text-xs font-mono uppercase tracking-wider mb-2">Password</label>
+            <label htmlFor="admin-password" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">Password</label>
             <input
               id="admin-password"
               type="password"
@@ -91,7 +91,7 @@ const AdminLogin = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full py-3 bg-accent-blue hover:bg-accent-electric text-white font-semibold rounded-lg transition-all duration-300 shadow-glow-blue hover:shadow-glow-blue-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
             {isLoading ? (
               <>
@@ -106,7 +106,7 @@ const AdminLogin = () => {
             )}
           </button>
 
-          <p className="text-center text-steel/40 text-xs font-mono">SFIT Internal Management System</p>
+          <p className="text-center text-slate-400 text-xs font-mono">SFIT Internal Management System</p>
         </form>
       </div>
     </div>

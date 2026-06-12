@@ -35,12 +35,12 @@ const Categories = () => {
   };
 
   return (
-    <section id="categories" ref={sectionRef} className="relative py-24 bg-navy-deep">
+    <section id="categories" ref={sectionRef} className="relative py-24 bg-slate-50 border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 section-reveal">
           <span className="text-accent-blue text-xs font-mono tracking-[0.3em] uppercase">Our Product Lines</span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-white mt-3">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-slate-900 mt-3">
             Everything Your Space Needs
           </h2>
           <div className="w-16 h-[2px] bg-accent-blue mx-auto mt-6" />
@@ -54,36 +54,36 @@ const Categories = () => {
               <button
                 key={category.id}
                 onClick={() => handleCategoryClick(category.id)}
-                className={`section-reveal card-border-trace card-glow group relative bg-navy-card rounded-2xl p-8 text-left transition-all duration-500 hover:-translate-y-2 hover:shadow-card-hover ${category.pattern}`}
+                className={`section-reveal card-border-trace group relative bg-white border border-slate-200/60 rounded-2xl p-8 text-left transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/5 ${category.pattern}`}
                 style={{ transitionDelay: `${index * 80}ms` }}
                 aria-label={`View ${category.name} products`}
               >
                 {/* Icon */}
-                <div className="w-16 h-16 text-accent-blue/60 group-hover:text-accent-electric transition-colors duration-300 mb-6">
+                <div className="w-16 h-16 text-blue-600/60 group-hover:text-blue-600 transition-colors duration-300 mb-6">
                   {CategoryIcons[category.icon]}
                 </div>
 
                 {/* Name */}
-                <h3 className="font-display text-xl text-white mb-2 group-hover:text-accent-electric transition-colors duration-300">
+                <h3 className="font-display text-xl text-slate-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">
                   {category.name}
                 </h3>
 
                 {/* Description */}
-                <p className="text-steel text-sm leading-relaxed mb-4">
+                <p className="text-slate-500 text-sm leading-relaxed mb-4">
                   {category.description}
                 </p>
 
                 {/* Product Count Badge */}
                 <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono ${
-                  count > 0 ? 'bg-accent-blue/10 text-accent-electric' : 'bg-navy-mid/50 text-steel/60'
+                  count > 0 ? 'bg-blue-50 text-blue-600 border border-blue-100' : 'bg-slate-100 text-slate-400'
                 }`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${count > 0 ? 'bg-accent-electric' : 'bg-steel/40'}`} />
+                  <span className={`w-1.5 h-1.5 rounded-full ${count > 0 ? 'bg-blue-600' : 'bg-slate-300'}`} />
                   {count > 0 ? `${count} Products` : 'Coming Soon'}
                 </div>
 
                 {/* Arrow indicator */}
-                <div className="absolute top-8 right-8 w-8 h-8 rounded-full border border-accent-blue/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
-                  <svg className="w-4 h-4 text-accent-electric" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                <div className="absolute top-8 right-8 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
+                  <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/>
                   </svg>
                 </div>

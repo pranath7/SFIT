@@ -44,7 +44,7 @@ const LoadingSequence = ({ onComplete }) => {
       aria-label="Loading SFIT"
     >
       {/* Progress Line */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-navy-dark overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-slate-100 overflow-hidden">
         <div
           className="h-full bg-gradient-to-r from-transparent via-accent-blue to-accent-electric transition-all duration-100 ease-linear"
           style={{ width: `${progress}%` }}
