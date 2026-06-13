@@ -54,8 +54,30 @@ const MotionExperience = () => {
   const containerRef = useRef(null);
   const startDragPos = useRef(0);
   const currentProgress = useRef(0);
+  const [scale, setScale] = useState(1);
 
   const currentProduct = PRODUCT_EXPERIENCES.find(p => p.id === activeTab);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (!containerRef.current) return;
+      const parentWidth = containerRef.current.parentElement.getBoundingClientRect().width;
+      // Subtract small padding to prevent edge touch clipping
+      const containerWidth = Math.max(280, parentWidth - 32);
+      const newScale = Math.min(1, containerWidth / 480);
+      setScale(newScale);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    const timeout = setTimeout(handleResize, 150);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearTimeout(timeout);
+    };
+  }, [activeTab]);
 
   const handlePointerDown = (e) => {
     if (isClosing) return;
@@ -207,13 +229,21 @@ const MotionExperience = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Column Left: Visual Canvas Simulator (7 cols) */}
-          <div className="lg:col-span-7 flex flex-col items-center justify-center p-4">
+          <div className="lg:col-span-7 w-full flex flex-col items-center justify-center p-4">
             
-            {/* Outer Cabinet Enclosure */}
+            {/* Responsive Scaling Wrapper */}
             <div 
-              ref={containerRef}
-              className="relative w-full max-w-[480px] h-[300px] bg-slate-900 border-4 border-slate-950 rounded-[28px] shadow-2xl overflow-hidden select-none touch-none"
+              className="w-full flex items-center justify-center overflow-visible"
+              style={{ height: `${300 * scale}px` }}
             >
+              <div 
+                ref={containerRef}
+                className="relative w-[480px] h-[300px] bg-slate-900 border-4 border-slate-950 rounded-[28px] shadow-2xl overflow-hidden select-none touch-none flex-shrink-0"
+                style={{ 
+                  transform: `scale(${scale})`,
+                  transformOrigin: 'center center'
+                }}
+              >
               {/* Cabinet Interior Shadow Map */}
               <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
               
@@ -405,6 +435,7 @@ const MotionExperience = () => {
                 </div>
               )}
             </div>
+          </div>
 
             {/* Live Drag Info Status */}
             <div className="mt-6 w-full max-w-[480px] flex items-center justify-between text-xs font-mono text-slate-body">
