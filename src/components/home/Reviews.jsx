@@ -1,31 +1,55 @@
 import { useState, useEffect, useRef } from 'react';
 import { supabase } from '../../utils/supabaseClient';
 
-const GOOGLE_MAPS_LINK = 'https://share.google/5NUOxchrn5LyhEvE4';
+const GOOGLE_MAPS_LINK = 'https://share.google/b0y1CSBVTMWaUMJ0S';
 
 const DEFAULT_REVIEWS = [
   {
-    id: 'rev_1',
-    name: 'Karthik Raja (Interior Architect)',
+    id: 'rev_g1',
+    name: 'Hariprasad S',
     rating: 5,
-    comment: 'Best quality sliding fittings and profile sections in Chennai. We use SFIT fittings for all our premium modular kitchen projects. Extremely durable.',
-    date: '2 weeks ago',
+    comment: 'Nice shop with lots of variety in hardware items and owner Vicky sir and their associates are very helpful and understanding.',
+    date: '2 months ago',
     source: 'Google'
   },
   {
-    id: 'rev_2',
-    name: 'Meera Krishnan',
+    id: 'rev_g2',
+    name: 'Gowtham Ravichandran',
     rating: 5,
-    comment: 'Purchased the Universal Magic Corner and S Corner for my kitchen. The soft close mechanism is super smooth and build quality is top-notch. Highly recommended B2B hardware dealer.',
+    comment: 'One of the exclusive shops for variety of branded handles, locks, fittings and profiles. Vicky Jain interior architecture consultancy guidance helps a lot for layout execution.',
     date: '1 month ago',
     source: 'Google'
   },
   {
-    id: 'rev_3',
-    name: 'Senthil Kumar (SK Builders)',
+    id: 'rev_g3',
+    name: 'Shahul Hameed',
     rating: 5,
-    comment: 'Excellent pricing for trade buyers. The team is very responsive on WhatsApp. Quick delivery and exact fittings as described. Best hardware supplier in Tamil Nadu.',
+    comment: 'Excellent range of quality hardware, backed by great service. Vicky Jain is highly knowledgeable and suggested correct profiles for modular wardrobe styling.',
     date: '3 weeks ago',
+    source: 'Google'
+  },
+  {
+    id: 'rev_g4',
+    name: 'Akshay Bhandari',
+    rating: 5,
+    comment: 'Exceptional collection of door handles and lockers. Rates are quite reasonable and wholesale friendly. Prakash ji\'s sons Akshay and Vicky guide customers very well.',
+    date: '2 weeks ago',
+    source: 'Google'
+  },
+  {
+    id: 'rev_g5',
+    name: 'Mukesh Jain',
+    rating: 5,
+    comment: 'Amazing hardware shop with wide range of items & understanding owners. Special thanks for profile execution and glass wardrobe sliding suggestions.',
+    date: '1 week ago',
+    source: 'Google'
+  },
+  {
+    id: 'rev_g6',
+    name: 'Bharathmali Bharathmali',
+    rating: 4,
+    comment: 'Best place to buy all kind of hardware fittings... Ultimate varieties of designer handles, locks, modular kitchen accessories in Chennai at reasonable pricing.',
+    date: '3 days ago',
     source: 'Google'
   }
 ];

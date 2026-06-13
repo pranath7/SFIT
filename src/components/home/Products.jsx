@@ -5,6 +5,8 @@ import { getWhatsAppLink } from '../../utils/whatsapp';
 
 const Products = () => {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [priceRange, setPriceRange] = useState(100000);
+  const [includeRequestPrice, setIncludeRequestPrice] = useState(true);
   const { products: allProducts, getPublishedProducts, getProductsByCategory } = useProducts();
   const sectionRef = useRef(null);
 
@@ -30,11 +32,21 @@ const Products = () => {
     const el = sectionRef.current?.querySelectorAll('.section-reveal');
     el?.forEach((e) => observer.observe(e));
     return () => observer.disconnect();
-  }, [allProducts, activeCategory]);
+  }, [allProducts, activeCategory, priceRange, includeRequestPrice]);
 
-  const products = activeCategory === 'all'
+  const filteredByCategory = activeCategory === 'all'
     ? getPublishedProducts()
     : getProductsByCategory(activeCategory);
+
+  const products = filteredByCategory.filter((p) => {
+    const matchesPrice = p.price !== undefined && p.price !== null && p.price >= 0 && p.price <= priceRange;
+    const isRequestPrice = p.price === undefined || p.price === null || isNaN(p.price) || p.price === 0;
+    
+    if (isRequestPrice) {
+      return includeRequestPrice;
+    }
+    return matchesPrice;
+  });
 
   return (
     <section id="products" ref={sectionRef} className="relative py-24 bg-white">
@@ -65,7 +77,7 @@ const Products = () => {
                     : 'text-charcoal hover:bg-slate-light/50 hover:text-primary'
                 }`}
               >
-                <span>All Products</span>
+                <span className="flex items-center gap-2">📦 All Products</span>
                 <span className="text-xs font-mono opacity-60">{getPublishedProducts().length}</span>
               </button>
               {CATEGORIES.map((cat) => {
@@ -80,11 +92,46 @@ const Products = () => {
                         : 'text-charcoal hover:bg-slate-light/50 hover:text-primary'
                     }`}
                   >
-                    <span>{cat.name}</span>
+                    <span className="flex items-center gap-2">
+                      <span>{cat.emoji}</span>
+                      <span>{cat.name}</span>
+                    </span>
                     <span className="text-xs font-mono opacity-60">{count}</span>
                   </button>
                 );
               })}
+            </div>
+
+            {/* Price Filter (Desktop) */}
+            <div className="mt-8 pt-6 border-t border-[#e2e8f0] space-y-4">
+              <h3 className="font-sans font-bold tracking-tight text-xl text-charcoal">
+                Filter by Price
+              </h3>
+              <div className="space-y-2">
+                <div className="flex justify-between text-sm font-mono text-slate-body">
+                  <span>Min: ₹0</span>
+                  <span>Max: ₹{priceRange.toLocaleString('en-IN')}</span>
+                </div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100000"
+                  step="1000"
+                  value={priceRange}
+                  onChange={(e) => setPriceRange(Number(e.target.value))}
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                />
+              </div>
+              
+              <label className="flex items-center gap-2 cursor-pointer select-none text-sm font-body text-slate-body">
+                <input
+                  type="checkbox"
+                  checked={includeRequestPrice}
+                  onChange={(e) => setIncludeRequestPrice(e.target.checked)}
+                  className="rounded text-primary focus:ring-primary h-4 w-4 border-[#e2e8f0]"
+                />
+                <span>Include "Price on Request"</span>
+              </label>
             </div>
           </div>
 
@@ -98,7 +145,7 @@ const Products = () => {
                   : 'bg-slate-light text-charcoal border border-[#e2e8f0]'
               }`}
             >
-              All Products
+              📦 All Products
             </button>
             {CATEGORIES.map((cat) => (
               <button
@@ -110,9 +157,42 @@ const Products = () => {
                     : 'bg-slate-light text-charcoal border border-[#e2e8f0]'
                 }`}
               >
-                {cat.shortName}
+                {cat.emoji} {cat.shortName}
               </button>
             ))}
+          </div>
+
+          {/* Mobile/Tablet Price Filter */}
+          <div className="w-full lg:hidden section-reveal bg-slate-50 border border-[#e2e8f0] rounded-[24px] p-5 mb-8 space-y-3">
+            <h4 className="font-sans font-bold text-sm text-charcoal uppercase tracking-wider">
+              Filter by Price
+            </h4>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex-1 space-y-2">
+                <div className="flex justify-between text-xs font-mono text-slate-body">
+                  <span>Min: ₹0</span>
+                  <span>Max: ₹{priceRange.toLocaleString('en-IN')}</span>
+                </div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100000"
+                  step="1000"
+                  value={priceRange}
+                  onChange={(e) => setPriceRange(Number(e.target.value))}
+                  className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                />
+              </div>
+              <label className="flex items-center gap-2 cursor-pointer select-none text-xs font-body text-slate-body">
+                <input
+                  type="checkbox"
+                  checked={includeRequestPrice}
+                  onChange={(e) => setIncludeRequestPrice(e.target.checked)}
+                  className="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-[#e2e8f0]"
+                />
+                <span>Include "Price on Request"</span>
+              </label>
+            </div>
           </div>
 
           {/* Right Area — Products Grid or Empty State */}

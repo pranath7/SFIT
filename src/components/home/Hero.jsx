@@ -27,7 +27,7 @@ const Hero = () => {
     <section
       id="home"
       ref={heroRef}
-      className="relative min-h-[90vh] pt-28 lg:pt-36 flex items-center bg-white overflow-hidden"
+      className="relative min-h-[90vh] pt-36 lg:pt-48 flex items-center bg-white overflow-hidden"
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
         

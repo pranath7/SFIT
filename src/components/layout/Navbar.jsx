@@ -44,10 +44,10 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20 lg:h-[90px]">
+          <div className="flex items-center justify-between h-28 lg:h-[130px]">
             {/* Logo */}
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollTo('#home'); }} className="flex items-center group" aria-label="SFIT Home">
-              <img src="/logo.png" alt="S-FIT Logo" className="h-16 lg:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
+              <img src="/logo.png" alt="S-FIT Logo" className="h-24 lg:h-32 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
             </a>
 
             {/* Desktop Nav Links */}
@@ -109,7 +109,7 @@ const Navbar = () => {
         }`}
       >
         <div className="absolute inset-0 bg-charcoal/40 backdrop-blur-md" onClick={() => setMobileOpen(false)} />
-        <div className={`absolute top-20 left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-transform duration-500 ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className={`absolute top-28 left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-transform duration-500 ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
           {navLinks.map((link) => (
             <a
               key={link.href}

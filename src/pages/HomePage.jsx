@@ -5,6 +5,7 @@ import LoadingSequence from '../components/home/LoadingSequence';
 import Hero from '../components/home/Hero';
 import TickerStrip from '../components/home/TickerStrip';
 import Categories from '../components/home/Categories';
+import MotionExperience from '../components/home/MotionExperience';
 import Reviews from '../components/home/Reviews';
 import Products from '../components/home/Products';
 import About from '../components/home/About';
@@ -40,6 +41,12 @@ const HomePage = () => {
 
           {/* Divider */}
           <SectionDivider color="#f8fafc" flip />
+
+          {/* Interactive Motion Experience */}
+          <MotionExperience />
+
+          {/* Divider */}
+          <SectionDivider color="#f8fafc" />
 
           {/* 4. Customer Reviews */}
           <Reviews />

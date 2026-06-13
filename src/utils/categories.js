@@ -8,6 +8,7 @@ export const CATEGORIES = [
     pattern: 'geo-pattern-1',
     badgeClass: 'badge-kitchen',
     icon: 'kitchen',
+    emoji: '🍳',
   },
   {
     id: 'sliding-fittings',
@@ -17,6 +18,7 @@ export const CATEGORIES = [
     pattern: 'geo-pattern-2',
     badgeClass: 'badge-sliding',
     icon: 'sliding',
+    emoji: '🛞',
   },
   {
     id: 'furniture-fixtures',
@@ -26,6 +28,7 @@ export const CATEGORIES = [
     pattern: 'geo-pattern-3',
     badgeClass: 'badge-furniture',
     icon: 'furniture',
+    emoji: '🛋️',
   },
   {
     id: 'sofa-legs',
@@ -35,6 +38,7 @@ export const CATEGORIES = [
     pattern: 'geo-pattern-4',
     badgeClass: 'badge-sofa',
     icon: 'sofa',
+    emoji: '🪑',
   },
   {
     id: 'bathroom-accessories',
@@ -44,6 +48,7 @@ export const CATEGORIES = [
     pattern: 'geo-pattern-5',
     badgeClass: 'badge-bathroom',
     icon: 'bathroom',
+    emoji: '🚿',
   },
   {
     id: 'profiles',
@@ -53,6 +58,7 @@ export const CATEGORIES = [
     pattern: 'geo-pattern-6',
     badgeClass: 'badge-profiles',
     icon: 'profiles',
+    emoji: '📏',
   },
 ];
 

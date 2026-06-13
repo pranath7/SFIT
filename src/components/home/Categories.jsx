@@ -64,8 +64,9 @@ const Categories = () => {
                 </div>
 
                 {/* Name */}
-                <h3 className="font-sans font-bold tracking-tight text-xl text-charcoal mb-2 group-hover:text-primary transition-colors duration-300">
-                  {category.name}
+                <h3 className="font-sans font-bold tracking-tight text-xl text-charcoal mb-2 group-hover:text-primary transition-colors duration-300 flex items-center gap-2">
+                  <span>{category.emoji}</span>
+                  <span>{category.name}</span>
                 </h3>
 
                 {/* Description */}
