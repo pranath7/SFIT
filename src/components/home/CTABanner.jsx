@@ -65,6 +65,52 @@ const CTABanner = () => {
               Follow @sfitkitchen
             </a>
           </div>
+
+          {/* Address & Map Section */}
+          <div className="mt-16 bg-white border border-[#e2e8f0] rounded-[24px] p-8 md:p-10 shadow-sm max-w-2xl mx-auto text-left relative overflow-hidden group hover:shadow-md transition-all duration-300">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none group-hover:bg-primary/10 transition-colors" />
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="hexagon-icon-wrap">
+                    <div className="hexagon-icon-border" />
+                    <div className="hexagon-icon-inner text-primary bg-white">
+                      📍
+                    </div>
+                  </div>
+                  <span className="text-xs font-mono font-bold tracking-wider text-primary uppercase">
+                    Store Location
+                  </span>
+                </div>
+                <h3 className="font-sans font-bold text-xl text-charcoal">
+                  Sathyam Hardwares (S-FIT)
+                </h3>
+                <p className="text-slate-body text-sm leading-relaxed max-w-sm">
+                  123, Avadhanam Papier Road,<br />
+                  Near Choolai Park, Choolai,<br />
+                  Chennai, Tamil Nadu 600007
+                </p>
+                <div className="flex items-center gap-2 text-xs text-slate-body/75">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span>Open 10:00 AM – 8:30 PM (Mon–Sat)</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 justify-center min-w-[200px]">
+                <a
+                  href="https://www.google.com/maps/place/Sathyam+hardwares/@13.0902701,80.2633086,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5265e5b4a82763:0xbf6058e934a4683e!8m2!3d13.0902701!4d80.2633086!16s%2Fg%2F11cp67dggt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full py-3 bg-primary hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  Open in Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
