@@ -21,9 +21,17 @@ const CTABanner = () => {
 
   return (
     <section id="contact" ref={sectionRef} className="relative py-24 overflow-hidden border-t border-[#e2e8f0] bg-[#f8fafc]">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] translate-x-1/2 translate-y-1/2" />
+      {/* Decorative blurred hexagons */}
+      <div className="absolute top-0 left-0 w-96 h-96 text-primary/5 pointer-events-none blur-[100px] -translate-x-1/2 -translate-y-1/2 select-none">
+        <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
+          <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+        </svg>
+      </div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 text-primary/5 pointer-events-none blur-[100px] translate-x-1/2 translate-y-1/2 select-none">
+        <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
+          <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+        </svg>
+      </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="section-reveal">

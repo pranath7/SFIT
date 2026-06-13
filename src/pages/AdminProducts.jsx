@@ -146,6 +146,7 @@ const AdminProducts = () => {
                   <th>Category</th>
                   <th>Cost Price (CP)</th>
                   <th>Selling Price (SP)</th>
+                  <th>Variants</th>
                   <th>Status</th>
                   <th>Date Added</th>
                   <th className="w-24">Actions</th>
@@ -195,6 +196,19 @@ const AdminProducts = () => {
                       </td>
                       <td className="font-semibold text-blue-600 text-sm font-mono">
                         {product.price ? `₹${product.price}` : '—'}
+                      </td>
+                      <td>
+                        {product.variants && product.variants.length > 0 ? (
+                          <div className="flex flex-wrap gap-1 max-w-[220px]">
+                            {product.variants.map((v, i) => (
+                              <span key={i} className="inline-block px-1.5 py-0.5 bg-slate-100 border border-slate-200 text-slate-700 text-[10px] rounded font-mono whitespace-nowrap">
+                                {v.size} (₹{v.price})
+                              </span>
+                            ))}
+                          </div>
+                        ) : (
+                          <span className="text-slate-400 text-xs">—</span>
+                        )}
                       </td>
                       <td>
                         <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase tracking-wider ${

@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-4">
-              <img src="/logo.png" alt="S-FIT Logo" className="h-12 w-auto object-contain" />
+              <img src="/logo.png" alt="S-FIT Logo" className="h-24 w-auto object-contain" />
             </div>
             <p className="text-slate-body text-sm leading-relaxed mb-6">
               Premium kitchen accessories, sliding fittings, furniture hardware, and architectural profiles. Engineered for excellence, delivered across India.

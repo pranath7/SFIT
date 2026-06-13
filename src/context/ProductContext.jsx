@@ -10,6 +10,34 @@ export const useProducts = () => {
   return ctx;
 };
 
+const mapDbProductToApp = (p) => {
+  let parsedDescription = p.description || '';
+  let variants = [];
+  if (parsedDescription.includes('|||VARIANTS|||')) {
+    const parts = parsedDescription.split('|||VARIANTS|||');
+    parsedDescription = parts[0];
+    try {
+      variants = JSON.parse(parts[1]) || [];
+    } catch (e) {
+      variants = [];
+    }
+  }
+  return {
+    id: p.id,
+    name: p.name,
+    category: p.category,
+    description: parsedDescription,
+    price: Number(p.price),
+    costPrice: p.cost_price ? Number(p.cost_price) : undefined,
+    images: p.images || [],
+    featured: p.featured,
+    status: p.status,
+    createdAt: p.created_at,
+    updatedAt: p.updated_at,
+    variants: variants
+  };
+};
+
 export const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [customCategories, setCustomCategories] = useState([]);
@@ -25,21 +53,7 @@ export const ProductProvider = ({ children }) => {
             .order('created_at', { ascending: false });
           
           if (!error && data) {
-            // Map db snake_case back to camelCase
-            const mapped = data.map(p => ({
-              id: p.id,
-              name: p.name,
-              category: p.category,
-              description: p.description,
-              price: Number(p.price),
-              costPrice: p.cost_price ? Number(p.cost_price) : undefined,
-              images: p.images || [],
-              featured: p.featured,
-              status: p.status,
-              createdAt: p.created_at,
-              updatedAt: p.updated_at
-            }));
-            setProducts(mapped);
+            setProducts(data.map(mapDbProductToApp));
             setCustomCategories(storage.getCustomCategories());
             return;
           }
@@ -67,7 +81,9 @@ export const ProductProvider = ({ children }) => {
           id: localProduct.id,
           name: product.name,
           category: product.category,
-          description: product.description,
+          description: product.variants && product.variants.length > 0
+            ? `${product.description || ''}|||VARIANTS|||${JSON.stringify(product.variants)}`
+            : product.description,
           price: product.price,
           cost_price: product.costPrice || null,
           images: product.images || [],
@@ -89,19 +105,7 @@ export const ProductProvider = ({ children }) => {
     if (supabase) {
       const { data } = await supabase.from('products').select('*').order('created_at', { ascending: false });
       if (data) {
-        setProducts(data.map(p => ({
-          id: p.id,
-          name: p.name,
-          category: p.category,
-          description: p.description,
-          price: Number(p.price),
-          costPrice: p.cost_price ? Number(p.cost_price) : undefined,
-          images: p.images || [],
-          featured: p.featured,
-          status: p.status,
-          createdAt: p.created_at,
-          updatedAt: p.updated_at
-        })));
+        setProducts(data.map(mapDbProductToApp));
       }
     } else {
       setProducts(storage.getProducts());
@@ -115,10 +119,19 @@ export const ProductProvider = ({ children }) => {
     
     if (supabase) {
       try {
+        const existingProduct = products.find(p => p.id === id);
         const dbUpdates = {};
         if (updates.name !== undefined) dbUpdates.name = updates.name;
         if (updates.category !== undefined) dbUpdates.category = updates.category;
-        if (updates.description !== undefined) dbUpdates.description = updates.description;
+        
+        if (updates.description !== undefined || updates.variants !== undefined) {
+          const desc = updates.description !== undefined ? updates.description : (existingProduct?.description || '');
+          const vars = updates.variants !== undefined ? updates.variants : (existingProduct?.variants || []);
+          dbUpdates.description = vars && vars.length > 0
+            ? `${desc}|||VARIANTS|||${JSON.stringify(vars)}`
+            : desc;
+        }
+
         if (updates.price !== undefined) dbUpdates.price = updates.price;
         if (updates.costPrice !== undefined) dbUpdates.cost_price = updates.costPrice;
         if (updates.images !== undefined) dbUpdates.images = updates.images;
@@ -137,25 +150,13 @@ export const ProductProvider = ({ children }) => {
     if (supabase) {
       const { data } = await supabase.from('products').select('*').order('created_at', { ascending: false });
       if (data) {
-        setProducts(data.map(p => ({
-          id: p.id,
-          name: p.name,
-          category: p.category,
-          description: p.description,
-          price: Number(p.price),
-          costPrice: p.cost_price ? Number(p.cost_price) : undefined,
-          images: p.images || [],
-          featured: p.featured,
-          status: p.status,
-          createdAt: p.created_at,
-          updatedAt: p.updated_at
-        })));
+        setProducts(data.map(mapDbProductToApp));
       }
     } else {
       setProducts(storage.getProducts());
     }
     return { success: !cloudError, error: cloudError, product: localUpdated };
-  }, []);
+  }, [products]);
 
   const deleteProduct = useCallback(async (id) => {
     storage.deleteProduct(id);
@@ -172,19 +173,7 @@ export const ProductProvider = ({ children }) => {
     if (supabase) {
       const { data } = await supabase.from('products').select('*').order('created_at', { ascending: false });
       if (data) {
-        setProducts(data.map(p => ({
-          id: p.id,
-          name: p.name,
-          category: p.category,
-          description: p.description,
-          price: Number(p.price),
-          costPrice: p.cost_price ? Number(p.cost_price) : undefined,
-          images: p.images || [],
-          featured: p.featured,
-          status: p.status,
-          createdAt: p.created_at,
-          updatedAt: p.updated_at
-        })));
+        setProducts(data.map(mapDbProductToApp));
       }
     } else {
       setProducts(storage.getProducts());
@@ -206,19 +195,7 @@ export const ProductProvider = ({ children }) => {
     if (supabase) {
       const { data } = await supabase.from('products').select('*').order('created_at', { ascending: false });
       if (data) {
-        setProducts(data.map(p => ({
-          id: p.id,
-          name: p.name,
-          category: p.category,
-          description: p.description,
-          price: Number(p.price),
-          costPrice: p.cost_price ? Number(p.cost_price) : undefined,
-          images: p.images || [],
-          featured: p.featured,
-          status: p.status,
-          createdAt: p.created_at,
-          updatedAt: p.updated_at
-        })));
+        setProducts(data.map(mapDbProductToApp));
       }
     } else {
       setProducts(storage.getProducts());

@@ -44,10 +44,18 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-28 lg:h-[130px]">
+          <div className={`flex items-center justify-between transition-all duration-500 ${
+            scrolled ? 'h-20 lg:h-[90px]' : 'h-36 lg:h-[240px]'
+          }`}>
             {/* Logo */}
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollTo('#home'); }} className="flex items-center group" aria-label="SFIT Home">
-              <img src="/logo.png" alt="S-FIT Logo" className="h-24 lg:h-32 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
+              <img
+                src="/logo.png"
+                alt="S-FIT Logo"
+                className={`w-auto object-contain transition-all duration-500 group-hover:scale-[1.02] ${
+                  scrolled ? 'h-16 lg:h-[75px]' : 'h-32 lg:h-[220px]'
+                }`}
+              />
             </a>
 
             {/* Desktop Nav Links */}
@@ -57,8 +65,11 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-                  className="text-charcoal hover:text-primary text-sm font-body tracking-wide transition-colors duration-300 relative group"
+                  className="text-charcoal hover:text-primary text-sm font-body tracking-wide transition-all duration-300 relative group flex items-center gap-1.5"
                 >
+                  <svg className="w-2.5 h-2.5 text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 fill-primary/10 group-hover:rotate-30" viewBox="0 0 100 100">
+                    <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" stroke="currentColor" strokeWidth="12"/>
+                  </svg>
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full" />
                 </a>
@@ -109,7 +120,7 @@ const Navbar = () => {
         }`}
       >
         <div className="absolute inset-0 bg-charcoal/40 backdrop-blur-md" onClick={() => setMobileOpen(false)} />
-        <div className={`absolute top-28 left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-transform duration-500 ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className={`absolute left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-all duration-500 ${scrolled ? 'top-20' : 'top-36'} ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
           {navLinks.map((link) => (
             <a
               key={link.href}

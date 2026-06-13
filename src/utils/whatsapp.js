@@ -1,9 +1,13 @@
 const WHATSAPP_NUMBER = '919962285822';
 
-export const getWhatsAppLink = (productName = null) => {
+export const getWhatsAppLink = (productName = null, variantSize = null) => {
   let message;
   if (productName) {
-    message = `Hi SFIT! I'm interested in ${productName} — please share pricing and availability.`;
+    if (variantSize) {
+      message = `Hi SFIT! I'm interested in ${productName} (Size: ${variantSize}) — please share pricing and availability.`;
+    } else {
+      message = `Hi SFIT! I'm interested in ${productName} — please share pricing and availability.`;
+    }
   } else {
     message = `Hi SFIT! I'd like to know more about your products. Please share your catalog.`;
   }

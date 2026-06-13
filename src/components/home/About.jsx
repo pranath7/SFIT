@@ -68,9 +68,17 @@ const About = () => {
 
   return (
     <section id="about" ref={sectionRef} className="relative py-24 bg-white border-t border-slate-100 overflow-hidden">
-      {/* Background Decorative Accents */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-blue/5 rounded-full blur-[100px] pointer-events-none" />
+      {/* Background Decorative Hexagons */}
+      <div className="absolute top-0 right-0 w-96 h-96 text-primary/5 pointer-events-none blur-[100px] select-none">
+        <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
+          <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+        </svg>
+      </div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 text-blue-500/5 pointer-events-none blur-[100px] select-none">
+        <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
+          <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+        </svg>
+      </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -109,18 +117,24 @@ const About = () => {
                 Key Leadership
               </h4>
               <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">
-                    VJ
+                <div className="flex items-center gap-4 group">
+                  <div className="hexagon-icon-wrap">
+                    <div className="hexagon-icon-border" />
+                    <div className="hexagon-icon-inner font-bold text-xs font-mono">
+                      VJ
+                    </div>
                   </div>
                   <div>
                     <div className="text-charcoal text-sm font-semibold">Vicky Jain</div>
                     <div className="text-slate-500 text-xs font-mono">Interior Designer & Product Visionary</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">
-                    AJ
+                <div className="flex items-center gap-4 group">
+                  <div className="hexagon-icon-wrap">
+                    <div className="hexagon-icon-border" />
+                    <div className="hexagon-icon-inner font-bold text-xs font-mono">
+                      AJ
+                    </div>
                   </div>
                   <div>
                     <div className="text-charcoal text-sm font-semibold">Akshay Jain</div>
@@ -156,8 +170,11 @@ const About = () => {
                 className="section-reveal group bg-slate-50 border border-slate-200/80 rounded-2xl p-6 hover:bg-white hover:border-primary/45 hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
               >
                 <div className="space-y-4">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    {usp.icon}
+                  <div className="hexagon-icon-wrap mb-4">
+                    <div className="hexagon-icon-border" />
+                    <div className="hexagon-icon-inner text-primary group-hover:text-white group-hover:bg-primary bg-white transition-all duration-300">
+                      {usp.icon}
+                    </div>
                   </div>
                   <h4 className="font-sans font-bold tracking-tight text-base text-charcoal group-hover:text-primary transition-colors">
                     {usp.title}

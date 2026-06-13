@@ -23,12 +23,34 @@ const AdminAddProduct = () => {
   const [saving, setSaving] = useState(false);
   const [charCount, setCharCount] = useState(0);
   const [markupPercent, setMarkupPercent] = useState(25); // Default markup is 25%
+  
+  // Variants State
+  const [hasVariants, setHasVariants] = useState(false);
+  const [variants, setVariants] = useState([]);
 
   // Load existing product for edit mode
   useEffect(() => {
     if (id) {
       const product = getProductById(id);
       if (product) {
+        const prodVariants = product.variants || [];
+        const productHasVariants = prodVariants.length > 0;
+        
+        // Map variants to include markupPercent if CP and price are present
+        const mappedVariants = prodVariants.map(v => {
+          let markup = 25;
+          if (v.costPrice && v.price) {
+            markup = Math.round(((v.price - v.costPrice) / v.costPrice) * 100);
+          }
+          return {
+            id: `var_${Math.random()}`,
+            size: v.size || '',
+            costPrice: v.costPrice || '',
+            price: v.price || '',
+            markupPercent: markup
+          };
+        });
+
         setForm({
           name: product.name || '',
           category: product.category || CATEGORIES[0].id,
@@ -39,6 +61,8 @@ const AdminAddProduct = () => {
           costPrice: product.costPrice || '',
           price: product.price || '',
         });
+        setHasVariants(productHasVariants);
+        setVariants(mappedVariants);
         setCharCount((product.description || '').length);
         if (product.costPrice && product.price) {
           const diff = product.price - product.costPrice;
@@ -72,6 +96,69 @@ const AdminAddProduct = () => {
     const cp = parseFloat(form.costPrice) || 0;
     const sp = cp > 0 ? Math.round(cp * (1 + pct / 100)) : '';
     setForm((prev) => ({ ...prev, price: Math.round(sp) }));
+  };
+
+  const handleToggleVariants = (enabled) => {
+    setHasVariants(enabled);
+    if (enabled && variants.length === 0) {
+      if (form.costPrice || form.price) {
+        setVariants([
+          {
+            id: `var_${Date.now()}`,
+            size: '',
+            costPrice: form.costPrice,
+            price: form.price,
+            markupPercent: markupPercent
+          }
+        ]);
+      } else {
+        setVariants([
+          {
+            id: `var_${Date.now()}`,
+            size: '',
+            costPrice: '',
+            price: '',
+            markupPercent: 25
+          }
+        ]);
+      }
+    }
+  };
+
+  const handleVariantChange = (index, field, value) => {
+    const updated = [...variants];
+    updated[index][field] = value;
+    
+    // Recalculate if CP or markup changed
+    if (field === 'costPrice' || field === 'markupPercent') {
+      const cp = parseFloat(updated[index].costPrice) || 0;
+      const pct = parseFloat(updated[index].markupPercent) || 0;
+      updated[index].price = cp > 0 ? Math.round(cp * (1 + pct / 100)) : '';
+    } else if (field === 'price') {
+      const cp = parseFloat(updated[index].costPrice) || 0;
+      const sp = parseFloat(value) || 0;
+      if (cp > 0 && sp > 0) {
+        updated[index].markupPercent = Math.round(((sp - cp) / cp) * 100);
+      }
+    }
+    setVariants(updated);
+  };
+
+  const addVariantRow = () => {
+    setVariants((prev) => [
+      ...prev,
+      {
+        id: `var_${Date.now()}`,
+        size: '',
+        costPrice: '',
+        price: '',
+        markupPercent: 25,
+      },
+    ]);
+  };
+
+  const removeVariantRow = (index) => {
+    setVariants((prev) => prev.filter((_, i) => i !== index));
   };
 
   const [uploadingImages, setUploadingImages] = useState(false);
@@ -200,12 +287,39 @@ const AdminAddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!form.name.trim()) return;
+
+    if (hasVariants) {
+      if (variants.length === 0) {
+        alert("⚠️ Please add at least one variant.");
+        return;
+      }
+      for (let i = 0; i < variants.length; i++) {
+        if (!variants[i].size.trim()) {
+          alert(`⚠️ Variant #${i + 1} size is required.`);
+          return;
+        }
+        if (!variants[i].price) {
+          alert(`⚠️ Variant #${i + 1} Selling Price is required.`);
+          return;
+        }
+      }
+    }
+
     setSaving(true);
 
     const payload = {
       ...form,
-      costPrice: form.costPrice !== '' ? Number(form.costPrice) : null,
-      price: form.price !== '' ? Number(form.price) : 0,
+      costPrice: hasVariants 
+        ? (variants[0].costPrice !== '' ? Number(variants[0].costPrice) : null)
+        : (form.costPrice !== '' ? Number(form.costPrice) : null),
+      price: hasVariants
+        ? (variants[0].price !== '' ? Number(variants[0].price) : 0)
+        : (form.price !== '' ? Number(form.price) : 0),
+      variants: hasVariants ? variants.map(v => ({
+        size: v.size,
+        costPrice: v.costPrice !== '' ? Number(v.costPrice) : null,
+        price: v.price !== '' ? Number(v.price) : 0
+      })) : []
     };
 
     try {
@@ -298,86 +412,199 @@ const AdminAddProduct = () => {
           </div>
         </div>
 
-        {/* Pricing Block */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-5 bg-slate-50 rounded-xl border border-slate-200">
-          {/* Cost Price */}
+        {/* Has Variants Toggle */}
+        <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-200">
           <div>
-            <label htmlFor="product-cp" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
-              Cost Price (CP)
-            </label>
-            <div className="relative">
-              <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono">₹</span>
-              <input
-                id="product-cp"
-                type="number"
-                value={form.costPrice}
-                onChange={(e) => handleCostPriceChange(e.target.value)}
-                className="admin-input pl-8"
-                placeholder="0"
-                min="0"
-              />
-            </div>
+            <div className="text-slate-800 text-sm font-medium">Product Variants</div>
+            <div className="text-slate-400 text-xs">Does this product have different sizes and pricing?</div>
           </div>
-
-          {/* Markup % */}
-          <div>
-            <label className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
-              Markup Percentage
-            </label>
-            <div className="flex items-center gap-2">
-              <input
-                type="number"
-                value={markupPercent}
-                onChange={(e) => handleMarkupChange(Number(e.target.value))}
-                className="admin-input flex-1"
-                placeholder="25"
-                min="0"
-              />
-              <button
-                type="button"
-                onClick={() => handleMarkupChange(25)}
-                className={`px-3 py-2 rounded-lg text-xs font-mono transition-colors border ${
-                  markupPercent === 25
-                    ? 'bg-blue-600 text-white border-blue-600'
-                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
-                }`}
-              >
-                25%
-              </button>
-              <button
-                type="button"
-                onClick={() => handleMarkupChange(30)}
-                className={`px-3 py-2 rounded-lg text-xs font-mono transition-colors border ${
-                  markupPercent === 30
-                    ? 'bg-blue-600 text-white border-blue-600'
-                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
-                }`}
-              >
-                30%
-              </button>
-            </div>
-          </div>
-
-          {/* Selling Price */}
-          <div>
-            <label htmlFor="product-sp" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
-              Selling Price (SP) <span className="text-red-400">*</span>
-            </label>
-            <div className="relative">
-              <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono">₹</span>
-              <input
-                id="product-sp"
-                type="number"
-                value={form.price}
-                onChange={(e) => handleChange('price', e.target.value)}
-                className="admin-input pl-8 font-semibold text-blue-600 border-slate-200"
-                placeholder="0"
-                min="0"
-                required
-              />
-            </div>
-          </div>
+          <button
+            type="button"
+            onClick={() => handleToggleVariants(!hasVariants)}
+            className={`toggle-switch ${hasVariants ? 'active' : ''}`}
+            role="switch"
+            aria-checked={hasVariants}
+            aria-label="Toggle variants"
+          />
         </div>
+
+        {/* Pricing Block or Variants Table */}
+        {!hasVariants ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-5 bg-slate-50 rounded-xl border border-slate-200">
+            {/* Cost Price */}
+            <div>
+              <label htmlFor="product-cp" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
+                Cost Price (CP)
+              </label>
+              <div className="relative">
+                <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono">₹</span>
+                <input
+                  id="product-cp"
+                  type="number"
+                  value={form.costPrice}
+                  onChange={(e) => handleCostPriceChange(e.target.value)}
+                  className="admin-input pl-8"
+                  placeholder="0"
+                  min="0"
+                />
+              </div>
+            </div>
+
+            {/* Markup % */}
+            <div>
+              <label className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
+                Markup Percentage
+              </label>
+              <div className="flex items-center gap-2">
+                <input
+                  type="number"
+                  value={markupPercent}
+                  onChange={(e) => handleMarkupChange(Number(e.target.value))}
+                  className="admin-input flex-1"
+                  placeholder="25"
+                  min="0"
+                />
+                <button
+                  type="button"
+                  onClick={() => handleMarkupChange(25)}
+                  className={`px-3 py-2 rounded-lg text-xs font-mono transition-colors border ${
+                    markupPercent === 25
+                      ? 'bg-blue-600 text-white border-blue-600'
+                      : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
+                  }`}
+                >
+                  25%
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleMarkupChange(30)}
+                  className={`px-3 py-2 rounded-lg text-xs font-mono transition-colors border ${
+                    markupPercent === 30
+                      ? 'bg-blue-600 text-white border-blue-600'
+                      : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
+                  }`}
+                >
+                  30%
+                </button>
+              </div>
+            </div>
+
+            {/* Selling Price */}
+            <div>
+              <label htmlFor="product-sp" className="block text-slate-600 text-xs font-mono uppercase tracking-wider mb-2">
+                Selling Price (SP) <span className="text-red-400">*</span>
+              </label>
+              <div className="relative">
+                <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono">₹</span>
+                <input
+                  id="product-sp"
+                  type="number"
+                  value={form.price}
+                  onChange={(e) => handleChange('price', e.target.value)}
+                  className="admin-input pl-8 font-semibold text-blue-600 border-slate-200"
+                  placeholder="0"
+                  min="0"
+                  required={!hasVariants}
+                />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-4">
+            <div className="flex items-center justify-between">
+              <span className="text-slate-700 text-xs font-mono uppercase tracking-wider">Product Variants (Sizing & Custom Pricing)</span>
+              <button
+                type="button"
+                onClick={addVariantRow}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg text-xs font-semibold transition-colors"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+                Add Variant
+              </button>
+            </div>
+            
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-slate-200 text-sm">
+                <thead>
+                  <tr className="text-left text-slate-500 font-mono text-xs uppercase tracking-wider">
+                    <th className="pb-3 pr-4 font-normal">Variant Size <span className="text-red-400">*</span></th>
+                    <th className="pb-3 px-4 font-normal w-32">Cost Price (CP)</th>
+                    <th className="pb-3 px-4 font-normal w-28">Markup %</th>
+                    <th className="pb-3 px-4 font-normal w-36">Selling Price (SP) <span className="text-red-400">*</span></th>
+                    <th className="pb-3 pl-4 font-normal w-12 text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {variants.map((v, index) => (
+                    <tr key={v.id} className="group">
+                      <td className="py-3 pr-4">
+                        <input
+                          type="text"
+                          value={v.size}
+                          onChange={(e) => handleVariantChange(index, 'size', e.target.value)}
+                          className="admin-input py-1.5 text-sm"
+                          placeholder="e.g., 600 mm"
+                          required
+                        />
+                      </td>
+                      <td className="py-3 px-4">
+                        <div className="relative">
+                          <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono text-xs">₹</span>
+                          <input
+                            type="number"
+                            value={v.costPrice}
+                            onChange={(e) => handleVariantChange(index, 'costPrice', e.target.value)}
+                            className="admin-input pl-6 py-1.5 text-sm font-mono"
+                            placeholder="0"
+                            min="0"
+                          />
+                        </div>
+                      </td>
+                      <td className="py-3 px-4">
+                        <input
+                          type="number"
+                          value={v.markupPercent}
+                          onChange={(e) => handleVariantChange(index, 'markupPercent', e.target.value)}
+                          className="admin-input py-1.5 text-sm font-mono"
+                          placeholder="25"
+                          min="0"
+                        />
+                      </td>
+                      <td className="py-3 px-4">
+                        <div className="relative">
+                          <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 font-mono text-xs">₹</span>
+                          <input
+                            type="number"
+                            value={v.price}
+                            onChange={(e) => handleVariantChange(index, 'price', e.target.value)}
+                            className="admin-input pl-6 py-1.5 text-sm font-semibold text-blue-600 font-mono border-slate-200"
+                            placeholder="0"
+                            min="0"
+                            required
+                          />
+                        </div>
+                      </td>
+                      <td className="py-3 pl-4 text-center">
+                        <button
+                          type="button"
+                          onClick={() => removeVariantRow(index)}
+                          className="p-1.5 text-slate-400 hover:text-red-500 rounded-lg hover:bg-slate-100 transition-colors"
+                          aria-label="Delete variant row"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"/>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
 
         {/* Image Upload */}
         <div>

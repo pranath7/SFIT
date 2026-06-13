@@ -54,39 +54,37 @@ const Categories = () => {
               <button
                 key={category.id}
                 onClick={() => handleCategoryClick(category.id)}
-                className={`section-reveal card-border-trace group relative bg-white border border-[#e2e8f0] rounded-[30px] p-8 text-left transition-all duration-500 hover:-translate-y-2 hover:shadow-glow-blue ${category.pattern}`}
+                className="section-reveal hexagon-wrap group relative w-full border-none bg-transparent transition-all duration-500 hover:-translate-y-2"
                 style={{ transitionDelay: `${index * 80}ms` }}
                 aria-label={`View ${category.name} products`}
               >
-                {/* Icon */}
-                <div className="w-16 h-16 text-primary/60 group-hover:text-primary transition-colors duration-300 mb-6">
-                  {CategoryIcons[category.icon]}
-                </div>
+                {/* Hexagon Border */}
+                <div className="hexagon-border shadow-sm group-hover:shadow-lg" />
 
-                {/* Name */}
-                <h3 className="font-sans font-bold tracking-tight text-xl text-charcoal mb-2 group-hover:text-primary transition-colors duration-300 flex items-center gap-2">
-                  <span>{category.emoji}</span>
-                  <span>{category.name}</span>
-                </h3>
+                {/* Hexagon Inner Content */}
+                <div className="hexagon-inner p-6 flex flex-col items-center justify-center">
+                  {/* Icon */}
+                  <div className="w-12 h-12 text-primary/60 group-hover:text-primary transition-colors duration-300 mb-4 flex items-center justify-center">
+                    {CategoryIcons[category.icon]}
+                  </div>
 
-                {/* Description */}
-                <p className="text-slate-body text-sm leading-relaxed mb-4">
-                  {category.description}
-                </p>
+                  {/* Name */}
+                  <h3 className="font-sans font-bold tracking-tight text-lg text-charcoal mb-2 group-hover:text-primary transition-colors duration-300 text-center">
+                    {category.emoji} {category.name}
+                  </h3>
 
-                {/* Product Count Badge */}
-                <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono ${
-                  count > 0 ? 'bg-slate-light text-charcoal border border-[#e2e8f0]' : 'bg-slate-50 text-slate-400'
-                }`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${count > 0 ? 'bg-primary' : 'bg-slate-300'}`} />
-                  {count > 0 ? `${count} Products` : 'Coming Soon'}
-                </div>
+                  {/* Description */}
+                  <p className="text-slate-500 text-xs text-center leading-relaxed mb-4 line-clamp-2 px-2">
+                    {category.description}
+                  </p>
 
-                {/* Arrow indicator */}
-                <div className="absolute top-8 right-8 w-8 h-8 rounded-full border border-[#e2e8f0] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:border-primary">
-                  <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/>
-                  </svg>
+                  {/* Product Count Badge */}
+                  <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-mono ${
+                    count > 0 ? 'bg-slate-50 text-charcoal border border-[#e2e8f0]' : 'bg-slate-50 text-slate-400'
+                  }`}>
+                    <span className={`w-1.5 h-1.5 rounded-full ${count > 0 ? 'bg-primary' : 'bg-slate-300'}`} />
+                    {count > 0 ? `${count} Products` : 'Coming Soon'}
+                  </div>
                 </div>
               </button>
             );

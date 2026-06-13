@@ -207,27 +207,33 @@ const Products = () => {
                       className="section-reveal card-border-trace group bg-white border border-[#e2e8f0] rounded-[30px] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-glow-blue"
                       style={{ transitionDelay: `${index * 80}ms` }}
                     >
-                      {/* Product Image */}
-                      <div className="relative aspect-square bg-slate-light overflow-hidden">
-                        {product.images && product.images.length > 0 ? (
-                          <img
-                            src={product.images[0]}
-                            alt={product.name}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            loading="lazy"
-                          />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center">
-                            <svg className="w-16 h-16 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="0.5">
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M6.75 7.5a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18 7.5a.75 0 11-1.5 0 .75.75 0 011.5 0z"/>
-                            </svg>
-                          </div>
-                        )}
-                        <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      {/* Product Image in Hexagon */}
+                      <div className="hexagon-wrap w-48 mx-auto my-6 group-hover:scale-[1.03] transition-all duration-300">
+                        {/* Hexagon Border */}
+                        <div className="hexagon-border shadow-sm group-hover:shadow-md" />
 
-                        {/* Featured badge */}
+                        {/* Hexagon Inner Container */}
+                        <div className="hexagon-inner p-0 bg-slate-50 overflow-hidden">
+                          {product.images && product.images.length > 0 ? (
+                            <img
+                              src={product.images[0]}
+                              alt={product.name}
+                              className="w-full h-full object-cover transition-transform duration-[1.2s] group-hover:scale-110"
+                              loading="lazy"
+                            />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center">
+                              <svg className="w-12 h-12 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1">
+                                <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+                              </svg>
+                            </div>
+                          )}
+                          <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </div>
+
+                        {/* Featured badge inside hexagon */}
                         {product.featured && (
-                          <div className="absolute top-3 left-3 px-2.5 py-1 bg-primary text-white text-[10px] font-mono font-bold rounded-full uppercase tracking-wider">
+                          <div className="absolute top-4 left-4 z-30 px-2.5 py-0.5 bg-primary text-white text-[9px] font-mono font-bold rounded-full uppercase tracking-wider">
                             Featured
                           </div>
                         )}

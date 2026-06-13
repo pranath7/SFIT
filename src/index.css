@@ -22,13 +22,6 @@ body {
   background-color: #ffffff;
   color: #292F36;
   overflow-x: hidden;
-  cursor: none;
-}
-
-@media (pointer: coarse) {
-  body {
-    cursor: auto;
-  }
 }
 
 ::-webkit-scrollbar {
@@ -477,3 +470,83 @@ body {
 .badge-sofa { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
 .badge-bathroom { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
 .badge-profiles { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
+
+/* ===== HEXAGON THEME ===== */
+.hexagon-shape {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon-wrap {
+  position: relative;
+  aspect-ratio: 1 / 1.15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hexagon-border {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.hexagon-wrap:hover .hexagon-border {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  transform: scale(1.03);
+}
+
+.hexagon-inner {
+  position: absolute;
+  inset: 1.5px; /* Border thickness */
+  background: #ffffff;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Small Hexagon Icons */
+.hexagon-icon-wrap {
+  position: relative;
+  width: 3rem;
+  height: 3.45rem; /* aspect ratio 1:1.15 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hexagon-icon-border {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #cbd5e1, #e2e8f0);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.group:hover .hexagon-icon-border,
+.hexagon-icon-wrap:hover .hexagon-icon-border {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  transform: scale(1.05);
+}
+
+.hexagon-icon-inner {
+  position: absolute;
+  inset: 1.5px;
+  background: #ffffff;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  z-index: 2;
+}
+

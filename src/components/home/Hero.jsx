@@ -27,8 +27,24 @@ const Hero = () => {
     <section
       id="home"
       ref={heroRef}
-      className="relative min-h-[90vh] pt-36 lg:pt-48 flex items-center bg-white overflow-hidden"
+      className="relative min-h-[90vh] pt-56 lg:pt-[280px] flex items-center bg-white overflow-hidden"
     >
+      {/* Floating Background Hexagons */}
+      <div className="absolute top-24 left-12 w-32 h-32 text-primary/5 pointer-events-none animate-float hidden lg:block select-none">
+        <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
+          <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+        </svg>
+      </div>
+      <div className="absolute bottom-20 right-[40%] w-24 h-24 text-blue-500/5 pointer-events-none animate-float-delayed hidden lg:block select-none">
+        <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
+          <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+        </svg>
+      </div>
+      <div className="absolute top-1/4 right-10 w-40 h-40 text-primary/5 pointer-events-none animate-pulse hidden lg:block select-none">
+        <svg viewBox="0 0 100 100" className="w-full h-full fill-current" stroke="currentColor" strokeWidth="1" fill="none">
+          <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" />
+        </svg>
+      </div>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
         
         {/* Left Column — Text */}
@@ -99,37 +115,71 @@ const Hero = () => {
             style={{ animation: 'fadeUp 0.8s ease-out 0.9s both' }}
           >
             {[
-              { label: 'Premium Quality', icon: '✦' },
-              { label: 'Pan India Shipping', icon: '✦' },
-              { label: 'Trade & Retail', icon: '✦' },
+              { label: 'Premium Quality' },
+              { label: 'Pan India Shipping' },
+              { label: 'Trade & Retail' },
             ].map((badge) => (
-              <div key={badge.label} className="flex items-center gap-2">
-                <span className="text-primary text-sm">{badge.icon}</span>
+              <div key={badge.label} className="flex items-center gap-2 group">
+                <svg className="w-3.5 h-3.5 text-primary fill-primary/10 transition-transform duration-500 group-hover:rotate-30" viewBox="0 0 100 100">
+                  <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" stroke="currentColor" strokeWidth="8"/>
+                </svg>
                 <span className="text-slate-600 text-xs font-mono font-medium tracking-wide uppercase">{badge.label}</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Right Column — Image Showcase */}
+        {/* Right Column — Honeycomb Image Showcase */}
         <div 
-          className="w-full lg:w-1/2 relative h-[50vh] lg:h-[80vh] flex items-center justify-center lg:justify-end"
+          className="w-full lg:w-1/2 relative h-[60vh] lg:h-[75vh] flex items-center justify-center"
           style={{ animation: 'slideInRight 1s ease-out 0.4s both' }}
         >
-          <div className="absolute inset-0 right-0 lg:-right-8 top-0 bottom-0 bg-slate-50 lg:rounded-l-[80px] overflow-hidden shadow-2xl">
-            <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 hover:scale-105" 
-              style={{ backgroundImage: "url('/hero-bg.png')" }} 
-            />
-            {/* Subtle overlay */}
-            <div className="absolute inset-0 bg-charcoal/5" />
-          </div>
-          
-          {/* Decorative Elements */}
-          <div className="absolute top-1/4 -left-6 lg:left-8 w-24 h-24 bg-white rounded-2xl shadow-xl p-4 hidden md:flex items-center justify-center animate-float">
-            <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-            </svg>
+          <div className="relative w-full max-w-[440px] h-full flex items-center justify-center">
+            
+            {/* Hexagon 1: Main Center */}
+            <div className="absolute w-[240px] md:w-[280px] aspect-[1/1.15] z-10 hover:z-25 group transition-transform duration-500 hover:scale-105 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-blue-500/10 hexagon-shape scale-[1.02] -z-10 shadow-xl" />
+              <div className="absolute inset-0 bg-slate-50 hexagon-shape overflow-hidden">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[1.5s] group-hover:scale-110" 
+                  style={{ backgroundImage: "url('/hero-bg.png')" }} 
+                />
+                <div className="absolute inset-0 bg-charcoal/5 group-hover:bg-charcoal/0 transition-colors duration-500" />
+              </div>
+            </div>
+
+            {/* Hexagon 2: Top Left Offset */}
+            <div className="absolute w-[150px] md:w-[170px] aspect-[1/1.15] -translate-x-[110px] -translate-y-[110px] md:-translate-x-[130px] md:-translate-y-[130px] z-0 hover:z-25 group transition-transform duration-500 hover:scale-105 shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-blue-500/5 hexagon-shape scale-[1.02] -z-10" />
+              <div className="absolute inset-0 bg-slate-100 hexagon-shape overflow-hidden">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[1.5s] group-hover:scale-110" 
+                  style={{ backgroundImage: "url('/hero-bg.png')", filter: 'hue-rotate(30deg) brightness(0.95)' }} 
+                />
+                <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-charcoal/0 transition-colors duration-500" />
+              </div>
+            </div>
+
+            {/* Hexagon 3: Bottom Right Offset */}
+            <div className="absolute w-[150px] md:w-[170px] aspect-[1/1.15] translate-x-[110px] translate-y-[110px] md:translate-x-[130px] md:translate-y-[130px] z-0 hover:z-25 group transition-transform duration-500 hover:scale-105 shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-blue-500/5 hexagon-shape scale-[1.02] -z-10" />
+              <div className="absolute inset-0 bg-slate-100 hexagon-shape overflow-hidden">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[1.5s] group-hover:scale-110" 
+                  style={{ backgroundImage: "url('/hero-bg.png')", filter: 'hue-rotate(-30deg) brightness(0.9)' }} 
+                />
+                <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-charcoal/0 transition-colors duration-500" />
+              </div>
+            </div>
+
+            {/* Decorative Floating Hexagon Badge */}
+            <div className="absolute top-[10%] right-[5%] w-14 h-14 bg-white shadow-lg flex items-center justify-center animate-float hexagon-shape border border-slate-100 z-30 select-none">
+              <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <polygon points="12,2 22,8.5 22,19.5 12,24 2,19.5 2,8.5" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+
           </div>
         </div>
 

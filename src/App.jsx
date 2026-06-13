@@ -1,7 +1,6 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ProductProvider } from './context/ProductContext';
 import { AuthProvider } from './context/AuthContext';
-import CustomCursor from './components/layout/CustomCursor';
 import HomePage from './pages/HomePage';
 import AdminLogin from './pages/AdminLogin';
 import AdminLayout from './admin/AdminLayout';
@@ -15,7 +14,6 @@ function App() {
     <AuthProvider>
       <ProductProvider>
         <Router>
-          <CustomCursor />
           <Routes>
             {/* Public Site */}
             <Route path="/" element={<HomePage />} />

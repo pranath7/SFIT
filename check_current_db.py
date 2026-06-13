@@ -25,6 +25,6 @@ if res.status_code == 200:
     products = res.json()
     print(f"Total products currently in Supabase: {len(products)}")
     for idx, p in enumerate(products):
-        print(f"  {idx+1}. ID: {p.get('id')} | Name: {p.get('name')} | Status: {p.get('status')}")
+        print(f"Product {idx+1}: {p}")
 else:
     print(f"Failed to fetch products. Code: {res.status_code}, Response: {res.text}")
