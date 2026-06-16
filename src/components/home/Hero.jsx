@@ -57,7 +57,7 @@ const Hero = () => {
             <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
               <polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" />
             </svg>
-            <span className="text-primary text-xs font-mono tracking-widest uppercase font-semibold">Precision Hardware Solutions</span>
+            <span className="text-primary text-xs font-mono tracking-widest uppercase font-semibold">SFIT Hardware — Precision Solutions</span>
           </div>
 
           {/* Headline */}
@@ -65,12 +65,11 @@ const Hero = () => {
             className="font-sans font-bold tracking-tight text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-charcoal leading-[1.05]"
             style={{ animation: 'fadeUp 0.8s ease-out 0.3s both' }}
           >
-            Where Every Detail<br />
+            SFIT Hardware.<br />
             <span className="relative inline-block mt-2">
-              <span className="text-primary relative z-10">Fits Perfectly</span>
+              <span className="text-primary relative z-10">Where Every Detail Fits</span>
               <span className="absolute bottom-2 left-0 w-full h-[6px] bg-primary/20 z-0" />
             </span>
-            .
           </h1>
 
           {/* Subtext */}
@@ -78,7 +77,7 @@ const Hero = () => {
             className="text-slate-500 text-lg sm:text-xl max-w-lg leading-relaxed font-body"
             style={{ animation: 'fadeUp 0.8s ease-out 0.5s both' }}
           >
-            Premium kitchen accessories, sliding fittings, furniture hardware, sofa legs, bathroom fittings, and architectural profiles — engineered for the spaces you build.
+            Discover SFIT Hardware. We supply premium kitchen accessories, sliding fittings, wardrobe profiles, and architectural furniture hardware designed and engineered for the spaces you build.
           </p>
 
           {/* CTAs */}

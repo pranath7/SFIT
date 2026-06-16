@@ -84,7 +84,7 @@ const About = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16 section-reveal">
-          <span className="text-primary text-xs font-mono tracking-[0.3em] uppercase">S-FIT – TRUSTED QUALITY</span>
+          <span className="text-primary text-xs font-mono tracking-[0.3em] uppercase">SFIT Hardware – Trusted Quality</span>
           <h2 className="font-sans font-bold tracking-tight text-3xl sm:text-4xl lg:text-5xl text-charcoal mt-3">
             Our Legacy & Story
           </h2>

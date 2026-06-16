@@ -55,7 +55,7 @@ const Products = () => {
         <div className="text-center mb-16 section-reveal">
           <span className="text-primary text-xs font-mono tracking-[0.3em] uppercase">Our Catalog</span>
           <h2 className="font-sans font-bold tracking-tight text-3xl sm:text-4xl lg:text-5xl text-charcoal mt-3">
-            Product Catalog
+            SFIT Hardware Catalog
           </h2>
           <div className="w-16 h-[2px] bg-primary mx-auto mt-6" />
         </div>

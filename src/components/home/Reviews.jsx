@@ -178,9 +178,9 @@ const Reviews = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16 section-reveal">
-          <span className="text-primary text-xs font-mono tracking-[0.3em] uppercase">Testimonials</span>
+          <span className="text-primary text-xs font-mono tracking-[0.3em] uppercase">Sathyam Hardwares Google Reviews</span>
           <h2 className="font-sans font-bold tracking-tight text-3xl sm:text-4xl lg:text-5xl text-charcoal mt-3">
-            Customer Reviews
+            SFIT Hardware Reviews
           </h2>
           <div className="w-16 h-[2px] bg-primary mx-auto mt-6" />
         </div>
