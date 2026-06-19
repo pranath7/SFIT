@@ -87,10 +87,10 @@ const About = () => {
             
             <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
               <p>
-                S-FIT is a premium hardware brand by <strong>Sathyam Hardwares</strong>, established in 2015. Guided and led by Mr. Prakash Kumarji Mangilalji Chajjed and led by his sons <strong>Vicky Jain</strong> (Interior Designer) & <strong>Akshay Jain</strong> (Business Management), we bring you exclusive designer handles, door fittings, kitchen accessories and a wide range of premium hardware solutions.
+                S-FIT is a premium modular kitchen and architectural hardware brand by <strong>Sathyam Hardwares</strong>, established in 2015. Guided and led by Mr. Prakash Kumarji Mangilalji Chajjed and led by his sons <strong>Vicky Jain</strong> (Interior Designer) & <strong>Akshay Jain</strong> (Business Management), we are the leading destination for <strong>SFIT Kitchen & SFIT Hardware in Chennai</strong>, bringing you exclusive designer handles, modular kitchen accessories, wardrobe profiles, and premium hardware solutions.
               </p>
               <p>
-                We focus on structural integrity and sleek aesthetics. S-FIT items are created to elevate standard cabinetry into modern, functional spaces.
+                We focus on structural integrity and sleek aesthetics. S-FIT items are created to elevate standard cabinetry into modern, functional spaces, ensuring that your search for the best kitchen and hardware in Chennai ends here.
               </p>
             </div>
             
