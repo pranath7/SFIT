@@ -303,12 +303,12 @@ const Products = () => {
   });
 
   return (
-    <section id="products" ref={sectionRef} className="relative py-24 bg-white">
+    <section id="products" ref={sectionRef} className="relative py-24 bg-[#050d1a] bg-gradient-cta text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 section-reveal">
-          <span className="text-primary text-xs font-mono tracking-[0.3em] uppercase">Our Catalog</span>
-          <h2 className="font-sans font-bold tracking-tight text-3xl sm:text-4xl lg:text-5xl text-charcoal mt-3">
+          <span className="text-blue-400 text-xs font-mono tracking-[0.3em] uppercase">Our Catalog</span>
+          <h2 className="font-sans font-bold tracking-tight text-3xl sm:text-4xl lg:text-5xl text-white mt-3">
             SFIT Hardware Catalog
           </h2>
           <div className="w-16 h-[2px] bg-primary mx-auto mt-6" />
@@ -319,7 +319,7 @@ const Products = () => {
           
           {/* Left Sidebar — Categories List (Desktop only) */}
           <div className="w-full lg:w-1/4 lg:sticky lg:top-32 section-reveal hidden lg:block">
-            <h3 className="font-sans font-bold tracking-tight text-2xl text-charcoal mb-6 pb-3 border-b border-[#e2e8f0]">
+            <h3 className="font-sans font-bold tracking-tight text-2xl text-white mb-6 pb-3 border-b border-slate-800">
               Categories
             </h3>
             <div className="space-y-1">
@@ -327,8 +327,8 @@ const Products = () => {
                 onClick={() => setActiveCategory('all')}
                 className={`w-full text-left font-sans font-bold tracking-tight text-lg py-2.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-between ${
                   activeCategory === 'all'
-                    ? 'bg-primary text-white font-semibold shadow-md'
-                    : 'text-charcoal hover:bg-slate-light/50 hover:text-primary'
+                    ? 'bg-white text-primary font-semibold shadow-md'
+                    : 'text-slate-300 hover:bg-white/10 hover:text-white'
                 }`}
               >
                 <span className="flex items-center gap-2">📦 All Products</span>
@@ -342,8 +342,8 @@ const Products = () => {
                     onClick={() => setActiveCategory(cat.id)}
                     className={`w-full text-left font-sans font-bold tracking-tight text-lg py-2.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-between ${
                       activeCategory === cat.id
-                        ? 'bg-primary text-white font-semibold shadow-md'
-                        : 'text-charcoal hover:bg-slate-light/50 hover:text-primary'
+                        ? 'bg-white text-primary font-semibold shadow-md'
+                        : 'text-slate-300 hover:bg-white/10 hover:text-white'
                     }`}
                   >
                     <span className="flex items-center gap-2">
@@ -357,12 +357,12 @@ const Products = () => {
             </div>
 
             {/* Price Filter (Desktop) */}
-            <div className="mt-8 pt-6 border-t border-[#e2e8f0] space-y-4">
-              <h3 className="font-sans font-bold tracking-tight text-xl text-charcoal">
+            <div className="mt-8 pt-6 border-t border-slate-800 space-y-4">
+              <h3 className="font-sans font-bold tracking-tight text-xl text-white">
                 Filter by Price
               </h3>
               <div className="space-y-2">
-                <div className="flex justify-between text-sm font-mono text-slate-body">
+                <div className="flex justify-between text-sm font-mono text-slate-300">
                   <span>Min: ₹0</span>
                   <span>Max: ₹{priceRange.toLocaleString('en-IN')}</span>
                 </div>
@@ -373,16 +373,16 @@ const Products = () => {
                   step="1000"
                   value={priceRange}
                   onChange={(e) => setPriceRange(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                  className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
               
-              <label className="flex items-center gap-2 cursor-pointer select-none text-sm font-body text-slate-body">
+              <label className="flex items-center gap-2 cursor-pointer select-none text-sm font-body text-slate-300">
                 <input
                   type="checkbox"
                   checked={includeRequestPrice}
                   onChange={(e) => setIncludeRequestPrice(e.target.checked)}
-                  className="rounded text-primary focus:ring-primary h-4 w-4 border-[#e2e8f0]"
+                  className="rounded text-blue-500 focus:ring-blue-500 h-4 w-4 border-slate-800 bg-slate-900"
                 />
                 <span>Include "Price on Request"</span>
               </label>
@@ -395,8 +395,8 @@ const Products = () => {
               onClick={() => setActiveCategory('all')}
               className={`px-5 py-2 rounded-full text-sm font-body whitespace-nowrap transition-all duration-300 ${
                 activeCategory === 'all'
-                  ? 'bg-primary text-white shadow-md'
-                  : 'bg-slate-light text-charcoal border border-[#e2e8f0]'
+                  ? 'bg-white text-primary shadow-md'
+                  : 'bg-slate-900/60 text-slate-300 border border-slate-800'
               }`}
             >
               📦 All Products
@@ -407,8 +407,8 @@ const Products = () => {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`px-5 py-2 rounded-full text-sm font-body whitespace-nowrap transition-all duration-300 ${
                   activeCategory === cat.id
-                    ? 'bg-primary text-white shadow-md'
-                    : 'bg-slate-light text-charcoal border border-[#e2e8f0]'
+                    ? 'bg-white text-primary shadow-md'
+                    : 'bg-slate-900/60 text-slate-300 border border-slate-800'
                 }`}
               >
                 {cat.emoji} {cat.shortName}
@@ -417,13 +417,13 @@ const Products = () => {
           </div>
 
           {/* Mobile/Tablet Price Filter */}
-          <div className="w-full lg:hidden section-reveal bg-slate-50 border border-[#e2e8f0] rounded-[24px] p-5 mb-8 space-y-3">
-            <h4 className="font-sans font-bold text-sm text-charcoal uppercase tracking-wider">
+          <div className="w-full lg:hidden section-reveal bg-slate-900/40 border border-slate-800 rounded-[24px] p-5 mb-8 space-y-3">
+            <h4 className="font-sans font-bold text-sm text-white uppercase tracking-wider">
               Filter by Price
             </h4>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex-1 space-y-2">
-                <div className="flex justify-between text-xs font-mono text-slate-body">
+                <div className="flex justify-between text-xs font-mono text-slate-300">
                   <span>Min: ₹0</span>
                   <span>Max: ₹{priceRange.toLocaleString('en-IN')}</span>
                 </div>
@@ -434,15 +434,15 @@ const Products = () => {
                   step="1000"
                   value={priceRange}
                   onChange={(e) => setPriceRange(Number(e.target.value))}
-                  className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                  className="w-full h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
-              <label className="flex items-center gap-2 cursor-pointer select-none text-xs font-body text-slate-body">
+              <label className="flex items-center gap-2 cursor-pointer select-none text-xs font-body text-slate-300">
                 <input
                   type="checkbox"
                   checked={includeRequestPrice}
                   onChange={(e) => setIncludeRequestPrice(e.target.checked)}
-                  className="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-[#e2e8f0]"
+                  className="rounded text-blue-500 focus:ring-blue-500 h-3.5 w-3.5 border-slate-800 bg-slate-900"
                 />
                 <span>Include "Price on Request"</span>
               </label>
@@ -460,12 +460,12 @@ const Products = () => {
                   placeholder="Search products..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-11 pr-10 py-3 bg-white border border-[#e2e8f0] rounded-2xl text-sm text-charcoal placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+                  className="w-full pl-11 pr-10 py-3 bg-slate-900/60 border border-slate-800 rounded-2xl text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition-all"
                 />
                 {searchQuery && (
                   <button
                     onClick={() => setSearchQuery('')}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-charcoal transition-colors cursor-pointer"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white transition-colors cursor-pointer"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
                   </button>
@@ -474,7 +474,7 @@ const Products = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="px-4 py-3 bg-white border border-[#e2e8f0] rounded-2xl text-sm text-charcoal focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all cursor-pointer min-w-[180px]"
+                className="px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-2xl text-sm text-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition-all cursor-pointer min-w-[180px]"
               >
                 <option value="default">Sort: Default</option>
                 <option value="price-low">Price: Low → High</option>
@@ -492,10 +492,10 @@ const Products = () => {
                     <div
                       key={product.id}
                       onClick={() => handleProductCardClick(product)}
-                      className="card-border-trace group bg-white border border-[#e2e8f0] rounded-[30px] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-glow-blue cursor-pointer"
+                      className="card-border-trace group bg-slate-900/40 border border-slate-800/80 rounded-[30px] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-glow-blue cursor-pointer"
                     >
                       {/* Product Image */}
-                      <div className="relative w-full aspect-[4/3] bg-slate-50 overflow-hidden">
+                      <div className="relative w-full aspect-[4/3] bg-slate-950 overflow-hidden">
                         {product.images && product.images.length > 0 ? (
                           <img
                             src={getGridThumbnail(product.images[0])}
@@ -527,22 +527,22 @@ const Products = () => {
                       <div className="p-6">
                         {/* Category Badge */}
                         {category && (
-                          <span className={`inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase tracking-wider mb-2 bg-slate-light text-charcoal border border-[#e2e8f0]`}>
+                          <span className={`inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase tracking-wider mb-2 bg-slate-950/60 text-slate-300 border border-slate-850`}>
                             {category.shortName}
                           </span>
                         )}
-                        <h3 className="font-sans font-bold tracking-tight text-lg text-charcoal mb-1.5 group-hover:text-primary transition-colors">
+                        <h3 className="font-sans font-bold tracking-tight text-lg text-white mb-1.5 group-hover:text-blue-400 transition-colors">
                           {product.name}
                         </h3>
                         {product.description && (
-                          <p className="text-slate-body text-xs leading-relaxed mb-4 line-clamp-2">{product.description}</p>
+                          <p className="text-slate-300 text-xs leading-relaxed mb-4 line-clamp-2">{product.description}</p>
                         )}
                         
                         <div className="flex items-center justify-between mb-4">
                           {product.price ? (
-                            <span className="text-primary font-semibold text-lg font-mono">₹{product.price}</span>
+                            <span className="text-blue-400 font-semibold text-lg font-mono">₹{product.price}</span>
                           ) : (
-                            <span className="text-slate-body/50 text-xs font-mono">Price on request</span>
+                            <span className="text-slate-400/50 text-xs font-mono">Price on request</span>
                           )}
                         </div>
                         <a
@@ -550,7 +550,7 @@ const Products = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
-                          className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg border border-[#e2e8f0] hover:border-primary text-charcoal hover:text-primary text-sm font-medium hover:bg-primary/5 transition-all duration-300"
+                          className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg border border-slate-855 hover:border-blue-400 text-slate-300 hover:text-blue-400 text-sm font-medium hover:bg-white/5 transition-all duration-300"
                         >
                           <svg className="w-4 h-4 text-whatsapp" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                           Enquire on WhatsApp
@@ -563,7 +563,7 @@ const Products = () => {
             ) : (
               /* Empty State */
               <div className="section-reveal max-w-2xl mx-auto">
-                <div className="bg-slate-light border border-[#e2e8f0] rounded-[30px] p-12 text-center">
+                <div className="bg-slate-900/40 border border-slate-800 rounded-[30px] p-12 text-center">
                   <div className="w-32 h-32 mx-auto mb-8 relative">
                     <div className="absolute inset-0 border-2 border-dashed border-primary/10 rounded-xl" />
                     <div className="absolute inset-4 border border-primary/5 rounded-lg" />
@@ -577,10 +577,10 @@ const Products = () => {
                     <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary/20" />
                   </div>
 
-                  <h3 className="font-sans font-bold tracking-tight text-2xl text-charcoal mb-3">
+                  <h3 className="font-sans font-bold tracking-tight text-2xl text-white mb-3">
                     {searchQuery.trim() ? 'No Products Found' : activeCategory !== 'all' ? 'Products Arriving Soon' : 'Catalog Coming Soon'}
                   </h3>
-                  <p className="text-slate-body text-sm max-w-md mx-auto mb-8 leading-relaxed">
+                  <p className="text-slate-300 text-sm max-w-md mx-auto mb-8 leading-relaxed">
                     {searchQuery.trim()
                       ? `No products match "${searchQuery}". Try a different search term or browse all categories.`
                       : 'Our product catalog is being updated. Chat with us on WhatsApp to explore our full range of premium hardware and fittings.'
@@ -603,8 +603,8 @@ const Products = () => {
 
         {/* Recently Viewed Section */}
         {recentlyViewed.length > 0 && !selectedProduct && (
-          <div className="mt-16 pt-12 border-t border-[#e2e8f0]">
-            <h3 className="font-sans font-bold text-xl text-charcoal mb-6 flex items-center gap-2">
+          <div className="mt-16 pt-12 border-t border-slate-800">
+            <h3 className="font-sans font-bold text-xl text-white mb-6 flex items-center gap-2">
               🕰️ Recently Viewed
             </h3>
             <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-none">
@@ -612,9 +612,9 @@ const Products = () => {
                 <div
                   key={rp.id}
                   onClick={() => handleProductCardClick(rp)}
-                  className="flex-shrink-0 w-44 bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden cursor-pointer hover:-translate-y-1 transition-all duration-300 hover:shadow-lg"
+                  className="flex-shrink-0 w-44 bg-slate-950/45 border border-slate-800 rounded-2xl overflow-hidden cursor-pointer hover:-translate-y-1 transition-all duration-300 hover:shadow-lg"
                 >
-                  <div className="w-full aspect-square bg-slate-50 overflow-hidden">
+                  <div className="w-full aspect-square bg-slate-950 overflow-hidden">
                     {rp.images && rp.images.length > 0 ? (
                       <img src={getSuggestionThumbnail(rp.images[0])} alt={rp.name} className="w-full h-full object-cover" />
                     ) : (
@@ -624,8 +624,8 @@ const Products = () => {
                     )}
                   </div>
                   <div className="p-3">
-                    <h4 className="text-xs font-bold text-charcoal line-clamp-1">{rp.name}</h4>
-                    <span className="text-[10px] font-mono text-primary">{rp.price ? `₹${rp.price}` : 'Price on request'}</span>
+                    <h4 className="text-xs font-bold text-slate-100 line-clamp-1">{rp.name}</h4>
+                    <span className="text-[10px] font-mono text-blue-400">{rp.price ? `₹${rp.price}` : 'Price on request'}</span>
                   </div>
                 </div>
               ))}
