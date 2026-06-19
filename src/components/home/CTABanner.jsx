@@ -20,7 +20,7 @@ const CTABanner = () => {
   }, []);
 
   return (
-    <section id="contact" ref={sectionRef} className="relative py-24 overflow-hidden border-t border-[#e2e8f0] bg-[#f8fafc]">
+    <section id="contact" ref={sectionRef} className="relative py-24 overflow-hidden border-t border-[#1b2d4a] bg-[#050d1a]">
       {/* Decorative blurred hexagons */}
       <div className="absolute top-0 left-0 w-96 h-96 text-primary/5 pointer-events-none blur-[100px] -translate-x-1/2 -translate-y-1/2 select-none">
         <svg viewBox="0 0 100 100" className="w-full h-full fill-current">

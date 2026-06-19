@@ -13,12 +13,12 @@ export default {
           body: '#64748b',   // slate-500
           border: '#e2e8f0', // slate-200
         },
-        primary: '#2563eb',  // royal blue
+        primary: '#1b3b6f',  // royal blue
         whatsapp: '#25D366',
         accent: {
-          blue: '#3b82f6',
-          electric: '#60a5fa',
-          glow: 'rgba(37, 99, 235, 0.15)',
+          blue: '#475569',
+          electric: '#8da9c4',
+          glow: 'rgba(27, 59, 111, 0.15)',
         },
       },
       fontFamily: {
@@ -84,8 +84,8 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-cta': 'linear-gradient(135deg, #F4F0EC 0%, #ffffff 100%)',
-        'gradient-card': 'linear-gradient(180deg, #ffffff 0%, #F4F0EC 100%)',
+        'gradient-cta': 'linear-gradient(135deg, #050d1a 0%, #0b192e 100%)',
+        'gradient-card': 'linear-gradient(180deg, #0b192e 0%, #050d1a 100%)',
       },
       boxShadow: {
         'glow-blue': '0 0 20px rgba(205, 162, 116, 0.15), 0 0 60px rgba(205, 162, 116, 0.05)',

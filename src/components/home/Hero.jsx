@@ -62,7 +62,7 @@ const Hero = () => {
 
           {/* Headline */}
           <h1
-            className="font-sans font-bold tracking-tight text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-charcoal leading-[1.05]"
+            className="font-sans font-bold tracking-tight text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-charcoal leading-[1.05]"
             style={{ animation: 'fadeUp 0.8s ease-out 0.3s both' }}
           >
             SFIT Hardware.<br />

@@ -25,3 +25,9 @@ dist-ssr
 
 # Brand assets
 catalog.pdf
+
+# Local testing and post scripts caches
+instagram_post_test.png
+temp_insta_post_output.png
+posted_products.json
+cloudinary_mapping.json

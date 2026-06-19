@@ -45,7 +45,7 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`flex items-center justify-between transition-all duration-500 ${
-            scrolled ? 'h-20 lg:h-[90px]' : 'h-36 lg:h-[240px]'
+            scrolled ? 'h-20 lg:h-[90px]' : 'h-32 lg:h-[180px]'
           }`}>
             {/* Logo */}
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollTo('#home'); }} className="flex items-center group" aria-label="SFIT Home">
@@ -53,7 +53,7 @@ const Navbar = () => {
                 src="/logo.png"
                 alt="S-FIT Logo"
                 className={`w-auto object-contain transition-all duration-500 group-hover:scale-[1.02] ${
-                  scrolled ? 'h-16 lg:h-[75px]' : 'h-32 lg:h-[220px]'
+                  scrolled ? 'h-14 lg:h-[60px]' : 'h-28 lg:h-[160px]'
                 }`}
               />
             </a>
@@ -120,7 +120,7 @@ const Navbar = () => {
         }`}
       >
         <div className="absolute inset-0 bg-charcoal/40 backdrop-blur-md" onClick={() => setMobileOpen(false)} />
-        <div className={`absolute left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-all duration-500 ${scrolled ? 'top-20' : 'top-36'} ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className={`absolute left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-all duration-500 ${scrolled ? 'top-20' : 'top-32'} ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
           {navLinks.map((link) => (
             <a
               key={link.href}

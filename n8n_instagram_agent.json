@@ -1,0 +1,138 @@
+{
+  "name": "SFIT Instagram Branded Auto-Post Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "a98a0ebc-4c4f-4d4b-ba2d-45db649ad918",
+      "name": "Schedule Trigger (Daily 9AM)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        380,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python C:\\Users\\91636\\.gemini\\antigravity-ide\\scratch\\sfit-website\\generate_insta_post.py --auto"
+      },
+      "id": "e0bfa938-1ee4-42b7-bd66-a6ab14524cb1",
+      "name": "Execute Post Generator",
+      "type": "n8n-nodes-base.executeCommandLine",
+      "typeVersion": 1,
+      "position": [
+        600,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.status}}",
+              "value2": "success"
+            }
+          ]
+        }
+      },
+      "id": "5170d10b-8015-46eb-8e50-f8444bc3c8ff",
+      "name": "Check Status",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        820,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "publish",
+        "caption": "={{$json.caption}}",
+        "mediaUrl": "={{$json.image_url}}"
+      },
+      "id": "83c162eb-3fb1-432d-9447-97594bc0285a",
+      "name": "Post to Instagram",
+      "type": "n8n-nodes-base.instagram",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        200
+      ],
+      "credentials": {
+        "instagramBusinessApi": {
+          "id": "your-instagram-cred-id",
+          "name": "Instagram Business Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "message": "No new products found to post. All catalog items have already been posted on Instagram!"
+      },
+      "id": "f5fbf7eb-1250-482d-884d-61614bc0285c",
+      "name": "No Action (All Posted)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        340
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Daily 9AM)": {
+      "main": [
+        [
+          {
+            "node": "Execute Post Generator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Post Generator": {
+      "main": [
+        [
+          {
+            "node": "Check Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Status": {
+      "main": [
+        [
+          {
+            "node": "Post to Instagram",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Action (All Posted)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "meta": null,
+  "pinData": {}
+}

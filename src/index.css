@@ -14,13 +14,13 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #2563eb #f8fafc;
+  scrollbar-color: #1b3b6f #f8fafc;
 }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: #ffffff;
-  color: #292F36;
+  background-color: #050d1a;
+  color: #f1f5f9;
   overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
   background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2563eb;
+  background: #1b3b6f;
   border-radius: 3px;
 }
 
@@ -44,8 +44,8 @@ body {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: #2563eb;
-  border: 1px solid rgba(37, 99, 235, 0.20);
+  background: #1b3b6f;
+  border: 1px solid rgba(27, 59, 111, 0.20);
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
@@ -60,9 +60,9 @@ body {
   height: 40px;
   margin-top: -20px;
   margin-left: -20px;
-  background: rgba(37, 99, 235, 0.06);
+  background: rgba(27, 59, 111, 0.06);
   border-width: 1.5px;
-  border-color: #2563eb;
+  border-color: #1b3b6f;
 }
 
 @media (pointer: coarse) {
@@ -111,7 +111,7 @@ body {
 }
 
 .card-border-trace:hover::before {
-  border-color: #2563eb;
+  border-color: #1b3b6f;
   animation: borderDraw 0.6s ease forwards;
 }
 
@@ -145,8 +145,8 @@ body {
   left: 10%;
   right: 10%;
   height: 1px;
-  background: #2563eb;
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4), 0 0 60px rgba(37, 99, 235, 0.2);
+  background: #1b3b6f;
+  box-shadow: 0 0 20px rgba(27, 59, 111, 0.4), 0 0 60px rgba(27, 59, 111, 0.2);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -159,7 +159,7 @@ body {
 .loading-screen {
   position: fixed;
   inset: 0;
-  background: #ffffff;
+  background: #050d1a;
   z-index: 100000;
   display: flex;
   flex-direction: column;
@@ -172,7 +172,7 @@ body {
   top: 0;
   left: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #2563eb, #e6c7a3, #2563eb, transparent);
+  background: linear-gradient(90deg, transparent, #1b3b6f, #e6c7a3, #1b3b6f, transparent);
   width: 100%;
   transform: scaleX(0);
   transform-origin: left;
@@ -248,7 +248,7 @@ body {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(27, 59, 111, 0.1);
 }
 
 /* ===== ADMIN STYLES ===== */
@@ -271,7 +271,7 @@ body {
 }
 
 .admin-card:hover {
-  border-color: rgba(37, 99, 235, 0.3);
+  border-color: rgba(27, 59, 111, 0.3);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
@@ -289,8 +289,8 @@ body {
 }
 
 .admin-input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: #1b3b6f;
+  box-shadow: 0 0 0 3px rgba(27, 59, 111, 0.1);
 }
 
 .admin-input::placeholder {
@@ -310,7 +310,7 @@ body {
 }
 
 .toggle-switch.active {
-  background: #2563eb;
+  background: #1b3b6f;
 }
 
 .toggle-switch::after {
@@ -331,32 +331,32 @@ body {
 
 /* ===== GEOMETRIC PATTERNS (per category) ===== */
 .geo-pattern-1 {
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(37, 99, 235, 0.02) 10px, rgba(37, 99, 235, 0.02) 11px);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(27, 59, 111, 0.02) 10px, rgba(27, 59, 111, 0.02) 11px);
 }
 .geo-pattern-2 {
-  background-image: radial-gradient(circle at 20px 20px, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+  background-image: radial-gradient(circle at 20px 20px, rgba(27, 59, 111, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 .geo-pattern-3 {
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(37, 99, 235, 0.02) 15px, rgba(37, 99, 235, 0.02) 16px),
-    repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(37, 99, 235, 0.02) 15px, rgba(37, 99, 235, 0.02) 16px);
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(27, 59, 111, 0.02) 15px, rgba(27, 59, 111, 0.02) 16px),
+    repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(27, 59, 111, 0.02) 15px, rgba(27, 59, 111, 0.02) 16px);
 }
 .geo-pattern-4 {
-  background-image: repeating-conic-gradient(rgba(37, 99, 235, 0.02) 0% 25%, transparent 0% 50%);
+  background-image: repeating-conic-gradient(rgba(27, 59, 111, 0.02) 0% 25%, transparent 0% 50%);
   background-size: 30px 30px;
 }
 .geo-pattern-5 {
-  background-image: linear-gradient(30deg, rgba(37, 99, 235, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(37, 99, 235, 0.02) 87.5%),
-    linear-gradient(150deg, rgba(37, 99, 235, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(37, 99, 235, 0.02) 87.5%);
+  background-image: linear-gradient(30deg, rgba(27, 59, 111, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(27, 59, 111, 0.02) 87.5%),
+    linear-gradient(150deg, rgba(27, 59, 111, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(27, 59, 111, 0.02) 87.5%);
   background-size: 40px 70px;
 }
 .geo-pattern-6 {
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(37, 99, 235, 0.02) 8px, rgba(37, 99, 235, 0.02) 9px);
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(27, 59, 111, 0.02) 8px, rgba(27, 59, 111, 0.02) 9px);
 }
 
 /* ===== DRAG & DROP ZONE ===== */
 .drop-zone {
-  border: 2px dashed rgba(37, 99, 235, 0.3);
+  border: 2px dashed rgba(27, 59, 111, 0.3);
   border-radius: 12px;
   padding: 40px;
   text-align: center;
@@ -366,8 +366,8 @@ body {
 
 .drop-zone:hover,
 .drop-zone.drag-over {
-  border-color: #2563eb;
-  background: rgba(37, 99, 235, 0.04);
+  border-color: #1b3b6f;
+  background: rgba(27, 59, 111, 0.04);
 }
 
 /* ===== RESPONSIVE BOTTOM BAR ===== */
@@ -464,12 +464,12 @@ body {
 .stagger-6 { animation-delay: 400ms; }
 
 /* ===== CATEGORY BADGE COLORS ===== */
-.badge-kitchen { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
-.badge-sliding { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
-.badge-furniture { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
-.badge-sofa { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
-.badge-bathroom { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
-.badge-profiles { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
+.badge-kitchen { background: rgba(27, 59, 111, 0.08); color: #1b3b6f; }
+.badge-sliding { background: rgba(27, 59, 111, 0.08); color: #1b3b6f; }
+.badge-furniture { background: rgba(27, 59, 111, 0.08); color: #1b3b6f; }
+.badge-sofa { background: rgba(27, 59, 111, 0.08); color: #1b3b6f; }
+.badge-bathroom { background: rgba(27, 59, 111, 0.08); color: #1b3b6f; }
+.badge-profiles { background: rgba(27, 59, 111, 0.08); color: #1b3b6f; }
 
 /* ===== HEXAGON THEME ===== */
 .hexagon-shape {
@@ -494,7 +494,7 @@ body {
 }
 
 .hexagon-wrap:hover .hexagon-border {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: linear-gradient(135deg, #1b3b6f, #475569);
   transform: scale(1.03);
 }
 
@@ -534,7 +534,7 @@ body {
 
 .group:hover .hexagon-icon-border,
 .hexagon-icon-wrap:hover .hexagon-icon-border {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: linear-gradient(135deg, #1b3b6f, #475569);
   transform: scale(1.05);
 }
 
@@ -546,7 +546,61 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2563eb;
+  color: #1b3b6f;
   z-index: 2;
 }
+
+/* ===== DARK BLUE & BLUE GREY OVERRIDES ===== */
+.bg-white, .bg-white\/95 {
+  background-color: #050d1a !important;
+}
+
+.bg-slate-light, .bg-slate-50, .bg-slate-100 {
+  background-color: #0b192e !important;
+}
+
+/* Text color overrides */
+.text-charcoal, .text-slate-800, .text-slate-900, .text-slate-700, .text-slate-600 {
+  color: #e2e8f0 !important;
+}
+
+.text-slate-body, .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+/* Border overrides */
+.border-slate-100, .border-slate-200, .border-slate-300, .border-\[\#e2e8f0\] {
+  border-color: #1b2d4a !important;
+}
+
+/* Form inputs & interactive items */
+input, textarea, select {
+  background-color: #0d1b2a !important;
+  color: #f1f5f9 !important;
+  border-color: #1b2d4a !important;
+}
+
+/* Glassmorphism & card backdrops */
+.glass {
+  background: rgba(11, 25, 46, 0.75) !important;
+  border: 1px solid rgba(27, 59, 111, 0.25) !important;
+}
+
+.hexagon-inner, .hexagon-icon-inner, .modal-card, .admin-card, .admin-sidebar {
+  background: #0b192e !important;
+}
+
+.admin-topbar {
+  background: rgba(11, 25, 46, 0.85) !important;
+  border-bottom-color: #1b2d4a !important;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar-track {
+  background: #050d1a !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b3b6f !important;
+}
+
 

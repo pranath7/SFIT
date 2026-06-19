@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import * as storage from '../utils/storage';
 import { supabase } from '../utils/supabaseClient';
+import fallbackProducts from '../data/fallbackProducts.json';
 
 const ProductContext = createContext(null);
 
@@ -39,7 +40,7 @@ const mapDbProductToApp = (p) => {
 };
 
 export const ProductProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(fallbackProducts);
   const [customCategories, setCustomCategories] = useState([]);
 
   // Fetch products and categories on mount

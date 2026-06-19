@@ -204,7 +204,7 @@ const Reviews = () => {
                 <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
                   <defs>
                     <linearGradient id="half-star-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="60%" stopColor="#2563eb" />
+                      <stop offset="60%" stopColor="#1b3b6f" />
                       <stop offset="60%" stopColor="#cbd5e1" />
                     </linearGradient>
                   </defs>

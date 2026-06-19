@@ -1,0 +1,2033 @@
+[
+  {
+    "id": "prod_1781792242150_kl3v4zips",
+    "name": "S CORNER",
+    "category": "kitchen-accessories",
+    "description": "Premium S Corner organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 11615,
+    "costPrice": 9292,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792067/z0l8yggnrgpppqdrtf0q.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "DARK GREY",
+        "costPrice": 9292,
+        "price": 11615
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_pvbgr28um",
+    "name": "UNIVERSAL MAGIC CORNER",
+    "category": "kitchen-accessories",
+    "description": "Premium Universal Magic Corner organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 21571,
+    "costPrice": 17257,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792218/h6rfq7nxyeoh0nhgb2ct.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "DARK GREY",
+        "costPrice": 17257,
+        "price": 21571
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_k4l1wxkgq",
+    "name": "WOODEN PANTRY - DARK GREY",
+    "category": "kitchen-accessories",
+    "description": "Premium Wooden Pantry - Dark Grey organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 21940,
+    "costPrice": 17552,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792148/okegfoiuaxxie0cioqc5.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "12x450 MM",
+        "costPrice": 17552,
+        "price": 21940
+      },
+      {
+        "size": "12x600 MM",
+        "costPrice": 20502,
+        "price": 25628
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_rmc3w1y1q",
+    "name": "SLIM BOX ANTHRACITE",
+    "category": "kitchen-accessories",
+    "description": "Premium Slim Box Anthracite organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 2396,
+    "costPrice": 1917,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792071/a8nhlcn69bd7z0ithyzn.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "4\"500 MM",
+        "costPrice": 1917,
+        "price": 2396
+      },
+      {
+        "size": "6\" 500 MM",
+        "costPrice": 2212,
+        "price": 2765
+      },
+      {
+        "size": "10\"500 MM",
+        "costPrice": 2802,
+        "price": 3502
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_vgjk5hw4l",
+    "name": "600 MM PVC ROLLING SHUTTER",
+    "category": "kitchen-accessories",
+    "description": "Premium 600 Mm Pvc Rolling Shutter organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 14565,
+    "costPrice": 11652,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792136/zmm17lb7tvhubt0yyzrr.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK & SILVER",
+        "costPrice": 11652,
+        "price": 14565
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_sw9zuh79s",
+    "name": "AUTO LID",
+    "category": "kitchen-accessories",
+    "description": "Premium Auto Lid organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 2765,
+    "costPrice": 2212,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792119/wwkeygcr9a1cmfn7fraz.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "8 LTR",
+        "costPrice": 2212,
+        "price": 2765
+      },
+      {
+        "size": "14 LTR",
+        "costPrice": 2655,
+        "price": 3319
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_20ll7tz3u",
+    "name": "PULL OUT BOTTLE",
+    "category": "kitchen-accessories",
+    "description": "Premium Pull Out Bottle organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 7002,
+    "costPrice": 5602,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792191/g8sckfskqklscrmipeyn.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "DARK GREY",
+        "costPrice": 5602,
+        "price": 7002
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_v1zi6qynh",
+    "name": "DISH RACK",
+    "category": "kitchen-accessories",
+    "description": "Premium Dish Rack organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 1844,
+    "costPrice": 1475,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792177/pmxac1e8ymyficytd19x.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "600 MM",
+        "costPrice": 1475,
+        "price": 1844
+      },
+      {
+        "size": "900 MM",
+        "costPrice": 2139,
+        "price": 2674
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_5hfl2avem",
+    "name": "PULL DOWN",
+    "category": "kitchen-accessories",
+    "description": "Premium Pull Down organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 22862,
+    "costPrice": 18290,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792062/zevn3uuyxdbk1rvvl0bk.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "600 MM",
+        "costPrice": 18290,
+        "price": 22862
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_040y9tgqt",
+    "name": "WICKER BASKET - IMPORTED",
+    "category": "kitchen-accessories",
+    "description": "Premium Wicker Basket - Imported organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 5162,
+    "costPrice": 4130,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792164/yx9qexj8khdfgzvo5eec.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "450 MM (4\"/6\"/8\")",
+        "costPrice": 4130,
+        "price": 5162
+      },
+      {
+        "size": "600 MM (4\"/6\"/8\")",
+        "costPrice": 4720,
+        "price": 5900
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_l6jsllcut",
+    "name": "RUBBER COATED WIRE CUP FITMENT",
+    "category": "kitchen-accessories",
+    "description": "Premium Rubber Coated Wire Cup Fitment organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 725,
+    "costPrice": 580,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792080/hjiw8vfuetymsllawm6p.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "4 MM",
+        "costPrice": 580,
+        "price": 725
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_9x2rblxiy",
+    "name": "RUBBER COATED WIRE THALI FITMENT",
+    "category": "kitchen-accessories",
+    "description": "Premium Rubber Coated Wire Thali Fitment organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 938,
+    "costPrice": 750,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792104/hhyleqdkbncluqgz0fcg.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "8 MM",
+        "costPrice": 750,
+        "price": 938
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_3i01htbcr",
+    "name": "ANTI-SKID MAT ROLL",
+    "category": "kitchen-accessories",
+    "description": "Premium Anti-Skid Mat Roll organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 4056,
+    "costPrice": 3245,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792226/gko71kbp6dzwzhffr9wq.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "500 MM X 2 MTR",
+        "costPrice": 3245,
+        "price": 4056
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_odc8gu5ce",
+    "name": "PREMIUM WATERFALL SINK SS 304",
+    "category": "kitchen-accessories",
+    "description": "Premium Premium Waterfall Sink Ss 304 organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 26250,
+    "costPrice": 21000,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792204/lyxfjz21r8007zqce5ew.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "750 MM X 450 MM",
+        "costPrice": 21000,
+        "price": 26250
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_k8oz6klg8",
+    "name": "WATERFALL SINK",
+    "category": "kitchen-accessories",
+    "description": "Premium Waterfall Sink organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 16000,
+    "costPrice": 12800,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792193/qxrynox5rt4stacaslhm.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "750 MM X 450 MM",
+        "costPrice": 12800,
+        "price": 16000
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_46z10bf2a",
+    "name": "PVC CUTLERY",
+    "category": "kitchen-accessories",
+    "description": "Premium Pvc Cutlery organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 755,
+    "costPrice": 604,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792069/su2raaonaa52nnwsrplu.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "450 MM",
+        "costPrice": 604,
+        "price": 755
+      },
+      {
+        "size": "500 MM",
+        "costPrice": 649,
+        "price": 811
+      },
+      {
+        "size": "600 MM",
+        "costPrice": 744,
+        "price": 930
+      },
+      {
+        "size": "700 MM",
+        "costPrice": 870,
+        "price": 1088
+      },
+      {
+        "size": "800 MM",
+        "costPrice": 1032,
+        "price": 1290
+      },
+      {
+        "size": "900 MM",
+        "costPrice": 1080,
+        "price": 1350
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_8ad1p2bwj",
+    "name": "BI-FOLD HEAVY",
+    "category": "kitchen-accessories",
+    "description": "Premium Bi-Fold Heavy organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 11000,
+    "costPrice": 8800,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792209/pi8bzkwvubvhv144o4ur.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "10-11 KG",
+        "costPrice": 8800,
+        "price": 11000
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_252ogtmh0",
+    "name": "GAS SPRING",
+    "category": "kitchen-accessories",
+    "description": "Premium Gas Spring organizer designed to maximize storage space, elevate kitchen aesthetics, and provide smooth, effortless operation. Engineered with top-grade materials for lasting durability.",
+    "price": 442,
+    "costPrice": 354,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792132/iokzhiuvspzxgzbbkxzk.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "5KG/10KG/ 15KG/20KG",
+        "costPrice": 354,
+        "price": 442
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_ist0ztlzt",
+    "name": "HEAVY U TRACK",
+    "category": "sliding-fittings",
+    "description": "High-performance Heavy U Track sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 2300,
+    "costPrice": 1840,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792085/wrcsxz5fuvgqyfxrryte.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "8 FT",
+        "costPrice": 1840,
+        "price": 2300
+      },
+      {
+        "size": "10 FT",
+        "costPrice": 2300,
+        "price": 2875
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_jt8m05emh",
+    "name": "SOFT CLOSE SLIDING WHEEL ( 80 KG )",
+    "category": "sliding-fittings",
+    "description": "High-performance Soft Close Sliding Wheel ( 80 Kg ) sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 2638,
+    "costPrice": 2110,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792094/marrpa6pvm72h8skwg7z.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_8kce1k87b",
+    "name": "SLIM TRACK WITH COVER",
+    "category": "sliding-fittings",
+    "description": "High-performance Slim Track With Cover sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 2950,
+    "costPrice": 2360,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792212/j6nsnffbqxok36mpivce.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "8 FT",
+        "costPrice": 2360,
+        "price": 2950
+      },
+      {
+        "size": "13 FT",
+        "costPrice": 3835,
+        "price": 4794
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_7snr4jqzn",
+    "name": "WARDROBE SLIDING WHEEL",
+    "category": "sliding-fittings",
+    "description": "High-performance Wardrobe Sliding Wheel sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 2288,
+    "costPrice": 1830,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792197/lfhfbpneq1igwzivv4hq.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "2DOORKIT",
+        "costPrice": 1830,
+        "price": 2288
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_lbr637j3p",
+    "name": "BED FITTING 5MM 1.5MTR",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Bed Fitting 5Mm 1.5Mtr hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 4609,
+    "costPrice": 3687,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792232/oveufsikbwsjjdbau7fd.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "150KG/ 200 KG",
+        "costPrice": 3687,
+        "price": 4609
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_rxk3tnmxc",
+    "name": "DOWEL",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Dowel hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 4,
+    "costPrice": 3,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792141/nzw7jkt2vj5p62myrbbb.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "8 X40",
+        "costPrice": 3,
+        "price": 4
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_anlsjhvuh",
+    "name": "LOUVER JAALI",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Louver Jaali hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 138,
+    "costPrice": 110,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792115/nxjk8ixw9lfjeyqbprzt.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "150 MM",
+        "costPrice": 110,
+        "price": 138
+      },
+      {
+        "size": "200 MM",
+        "costPrice": 190,
+        "price": 238
+      },
+      {
+        "size": "250 MM",
+        "costPrice": 230,
+        "price": 288
+      },
+      {
+        "size": "300 MM",
+        "costPrice": 310,
+        "price": 388
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_i5v5ippez",
+    "name": "IPSA TELESCOPIC CHANNEL - 40 KG",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Ipsa Telescopic Channel - 40 Kg hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 32,
+    "costPrice": 26,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792053/nojqftr8pfzsle6tsjfk.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "10\" 12\" 14\" 16\" 18\" 20\"",
+        "costPrice": 26,
+        "price": 32
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_gno5o2isr",
+    "name": "PUSH CATCHER PVC",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Push Catcher Pvc hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 138,
+    "costPrice": 110,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792060/jvzrlf11yxgb55aiop7d.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_qp764seeb",
+    "name": "PUSH CATCHER SS BIG",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Push Catcher Ss Big hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 262,
+    "costPrice": 210,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792179/uitraxqzmuv9ms0ost4y.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_1qwwg9r1z",
+    "name": "MINIFIX (3 PIC SET)",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Minifix (3 Pic Set) hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 14,
+    "costPrice": 11,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792097/zxmpadbpzjc2orrfedjt.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_90irieia5",
+    "name": "PVC SKIRTING 3 MTR (100 MM)",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Pvc Skirting 3 Mtr (100 Mm) hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 1225,
+    "costPrice": 980,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792171/omsbxh30vuaa6au7oomr.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "100 MM BLACK&SILVER",
+        "costPrice": 980,
+        "price": 1225
+      },
+      {
+        "size": "150 MM BLACK&SILVER",
+        "costPrice": 1320,
+        "price": 1650
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_1ubbbxq3x",
+    "name": "PVC LEG - IMPORTED",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Pvc Leg - Imported hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 56,
+    "costPrice": 45,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792128/xly8l1sfevdaq5oltblb.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "HEAVY",
+        "costPrice": 45,
+        "price": 56
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_rrcbcayg0",
+    "name": "ACRYLIC SHELF PIN",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Acrylic Shelf Pin hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 22,
+    "costPrice": 18,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792143/zcrdz0gqkwwzsg8gmzbo.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_qf468ftjr",
+    "name": "SS HEAVY SHELF BAT",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Ss Heavy Shelf Bat hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 30,
+    "costPrice": 24,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792040/vumuyfr2gdwggryhqgfn.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "SINGLE",
+        "costPrice": 24,
+        "price": 30
+      },
+      {
+        "size": "DOUBLE",
+        "costPrice": 36,
+        "price": 45
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_3y34rhqg0",
+    "name": "MS 3D HINGE SOFT CLOSE",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Ms 3D Hinge Soft Close hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 262,
+    "costPrice": 210,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792201/xrvfodduf6nowu0rozl8.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "0 CRANK 8 CRANK",
+        "costPrice": 210,
+        "price": 262
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_3xynk0vjh",
+    "name": "MS HINGE SOFT CLOSE",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Ms Hinge Soft Close hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 181,
+    "costPrice": 145,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792234/wf3q7ktwc6vlklucmdwy.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "0 CRANK 8 CRANK",
+        "costPrice": 145,
+        "price": 181
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_fcml01s3m",
+    "name": "165 DEG CORNER HINGE SOFT CLOSE",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade 165 Deg Corner Hinge Soft Close hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 725,
+    "costPrice": 580,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792057/wl3m7xhqpqruil0s3ryq.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_042n5kmvp",
+    "name": "SOFA 1",
+    "category": "sofa-legs",
+    "description": "Sturdy and elegant Sofa 1 support leg designed to offer reliable stability, high weight capacity, and a premium metallic accent to contemporary furniture pieces.",
+    "price": 812,
+    "costPrice": 650,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792167/poh6iifzo95f9sisnu3m.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "6\"GOLD",
+        "costPrice": 650,
+        "price": 812
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_qr4w8cs5u",
+    "name": "SOFA 2",
+    "category": "sofa-legs",
+    "description": "Sturdy and elegant Sofa 2 support leg designed to offer reliable stability, high weight capacity, and a premium metallic accent to contemporary furniture pieces.",
+    "price": 812,
+    "costPrice": 650,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792074/otbli2o4halpdb8dk336.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "6\"GOLD",
+        "costPrice": 650,
+        "price": 812
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_leaqhttu8",
+    "name": "SOFA 3",
+    "category": "sofa-legs",
+    "description": "Sturdy and elegant Sofa 3 support leg designed to offer reliable stability, high weight capacity, and a premium metallic accent to contemporary furniture pieces.",
+    "price": 981,
+    "costPrice": 785,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792106/wandmcdtvrurcevcej9p.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "6GOLD",
+        "costPrice": 785,
+        "price": 981
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_iye1zeh3o",
+    "name": "SOFA 4",
+    "category": "sofa-legs",
+    "description": "Sturdy and elegant Sofa 4 support leg designed to offer reliable stability, high weight capacity, and a premium metallic accent to contemporary furniture pieces.",
+    "price": 1150,
+    "costPrice": 920,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792199/dn5qpkx7rvoej2cwu7qf.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "12\" GOLD",
+        "costPrice": 920,
+        "price": 1150
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_3f9ccnn1a",
+    "name": "BATHROOM ACCESSORIES",
+    "category": "bathroom-accessories",
+    "description": "Elegant and rust-resistant Bathroom Accessories bathroom accessory crafted to combine utility and high-end design. Ideal for adding a touch of luxury and clean organization to modern bathrooms.",
+    "price": 2625,
+    "costPrice": 2100,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792048/aeivujy5mvzfe1dzbz4y.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 2100,
+        "price": 2625
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_bal0nrh0h",
+    "name": "PVC BATHROOM ACCESSORIES",
+    "category": "bathroom-accessories",
+    "description": "Elegant and rust-resistant Pvc Bathroom Accessories bathroom accessory crafted to combine utility and high-end design. Ideal for adding a touch of luxury and clean organization to modern bathrooms.",
+    "price": 2625,
+    "costPrice": 2100,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792108/dpzgtzffoyngupf7a2ia.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "WHITE&GREY",
+        "costPrice": 2100,
+        "price": 2625
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_e0z9cvyi4",
+    "name": "SS 304 SOAP DISPENSER",
+    "category": "bathroom-accessories",
+    "description": "Elegant and rust-resistant Ss 304 Soap Dispenser bathroom accessory crafted to combine utility and high-end design. Ideal for adding a touch of luxury and clean organization to modern bathrooms.",
+    "price": 1912,
+    "costPrice": 1530,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792215/a5ceqag9drxk7n7t1ksu.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "C.P MIRROR",
+        "costPrice": 1530,
+        "price": 1912
+      },
+      {
+        "size": "S S MATTE BLACK",
+        "costPrice": 1700,
+        "price": 2125
+      },
+      {
+        "size": "PVDF ROSE GOLD PVD GOLD BRUSH GOLD",
+        "costPrice": 1980,
+        "price": 2475
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_zlysssst0",
+    "name": "G HANDLE",
+    "category": "profiles",
+    "description": "Premium G Handle aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 1859,
+    "costPrice": 1487,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792043/eqxufw7tj01n3qmr4kwd.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1487,
+        "price": 1859
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 1562,
+        "price": 1952
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 1687,
+        "price": 2109
+      },
+      {
+        "size": "ANTIQUE",
+        "costPrice": 1412,
+        "price": 1765
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_xwdqgpyen",
+    "name": "J HANDLE",
+    "category": "profiles",
+    "description": "Premium J Handle aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2452,
+    "costPrice": 1962,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792188/c8wisfh8dcr5hmxjvsca.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1962,
+        "price": 2452
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 2062,
+        "price": 2578
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 2212,
+        "price": 2765
+      },
+      {
+        "size": "ANTIQUE",
+        "costPrice": 1862,
+        "price": 2328
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_yqkfpgnee",
+    "name": "C GOLA",
+    "category": "profiles",
+    "description": "Premium C Gola aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2109,
+    "costPrice": 1687,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792117/ruh6sjn6w6umoa5veghj.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1687,
+        "price": 2109
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 1787,
+        "price": 2234
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_fn9vl5jt2",
+    "name": "L GOLA",
+    "category": "profiles",
+    "description": "Premium L Gola aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 1640,
+    "costPrice": 1312,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792134/t2mmqgcgnpsgqvdhc0mc.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1312,
+        "price": 1640
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 1462,
+        "price": 1828
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_iw20f5t9s",
+    "name": "45 MM SHUTTER PROFILE",
+    "category": "profiles",
+    "description": "Premium 45 Mm Shutter Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2171,
+    "costPrice": 1737,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792174/zbxnwtsv8uc9hauc1zbl.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1737,
+        "price": 2171
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 1862,
+        "price": 2328
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 1987,
+        "price": 2484
+      },
+      {
+        "size": "ANTIQUE",
+        "costPrice": 1587,
+        "price": 1984
+      },
+      {
+        "size": "SAND GREY",
+        "costPrice": 1912,
+        "price": 2390
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_6t4bc7pqb",
+    "name": "67 MM HANDLE PROFILE",
+    "category": "profiles",
+    "description": "Premium 67 Mm Handle Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2890,
+    "costPrice": 2312,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792076/zwgyhnhomoj7w1c86z38.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 2312,
+        "price": 2890
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 2462,
+        "price": 3078
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 2612,
+        "price": 3265
+      },
+      {
+        "size": "ANTIQUE",
+        "costPrice": 2112,
+        "price": 2640
+      },
+      {
+        "size": "SAND GREY",
+        "costPrice": 2587,
+        "price": 3234
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_7v8zarkqv",
+    "name": "45 MM BINDI HANDLE PROFILE",
+    "category": "profiles",
+    "description": "Premium 45 Mm Bindi Handle Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2890,
+    "costPrice": 2312,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792050/h3o7k5j2omyxj5ik2ihm.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 2312,
+        "price": 2890
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 2462,
+        "price": 3078
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 2612,
+        "price": 3265
+      },
+      {
+        "size": "ANTIQUE",
+        "costPrice": 2112,
+        "price": 2640
+      },
+      {
+        "size": "SAND GREY",
+        "costPrice": 2587,
+        "price": 3234
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_81zl5qyni",
+    "name": "45 MM CURVE PROFILE",
+    "category": "profiles",
+    "description": "Premium 45 Mm Curve Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2700,
+    "costPrice": 2160,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792153/ascvb7bdxm17vufzpod3.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 2160,
+        "price": 2700
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 2430,
+        "price": 3038
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 2520,
+        "price": 3150
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_ny9bxc58s",
+    "name": "72 MM I-CURVE HANDLE PROFILE",
+    "category": "profiles",
+    "description": "Premium 72 Mm I-Curve Handle Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 3375,
+    "costPrice": 2700,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792229/h217plptfyuy2seszzy2.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 2700,
+        "price": 3375
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 3044,
+        "price": 3805
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 3210,
+        "price": 4012
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_qxgdezxbi",
+    "name": "2 DOOR SLIDING KIT",
+    "category": "profiles",
+    "description": "Premium 2 Door Sliding Kit aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 44689,
+    "costPrice": 35751,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792130/xayxxfafaqvl6hv3fqrm.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 35751,
+        "price": 44689
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 37630,
+        "price": 47038
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 38830,
+        "price": 48538
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_nvga9d6um",
+    "name": "3 DOOR SLIDING KIT",
+    "category": "profiles",
+    "description": "Premium 3 Door Sliding Kit aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 61546,
+    "costPrice": 49237,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792222/c4jlypmjnp2xgbu8d1j3.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 49237,
+        "price": 61546
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 50956,
+        "price": 63695
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 53222,
+        "price": 66528
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_vff4344bq",
+    "name": "16 X 45 SIDE PROFILE",
+    "category": "profiles",
+    "description": "Premium 16 X 45 Side Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 3625,
+    "costPrice": 2900,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792161/svwcuy8awge6xez3ksrw.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 2900,
+        "price": 3625
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 3100,
+        "price": 3875
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_ms4jikema",
+    "name": "16 X 45 DIVIDER PROFILE",
+    "category": "profiles",
+    "description": "Premium 16 X 45 Divider Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 3375,
+    "costPrice": 2700,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792088/aol38nqsr0bjvrvxlqi2.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 2700,
+        "price": 3375
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 2800,
+        "price": 3500
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_r3bt543i6",
+    "name": "16 X 45 TOP/BOTTOM PROFILE",
+    "category": "profiles",
+    "description": "Premium 16 X 45 Top/Bottom Profile aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 4875,
+    "costPrice": 3900,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792181/awnhlmn8kx4mamvf6oxl.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 3900,
+        "price": 4875
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 4200,
+        "price": 5250
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_l18tinneh",
+    "name": "STICK-ON DIVIDER 3 MTR",
+    "category": "profiles",
+    "description": "Premium Stick-On Divider 3 Mtr aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 1438,
+    "costPrice": 1150,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792078/ywzdbysupge9a1nbf1sn.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1150,
+        "price": 1438
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 1200,
+        "price": 1500
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_ekfr791aq",
+    "name": "SLIDING TRACK 3 MTR",
+    "category": "profiles",
+    "description": "Premium Sliding Track 3 Mtr aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 5140,
+    "costPrice": 4112,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792156/o7nj2onv8jqmyfcu8e5i.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 4112,
+        "price": 5140
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 4337,
+        "price": 5421
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_jjd57cw9c",
+    "name": "SLIDING TRACK COVER 3 MTR",
+    "category": "profiles",
+    "description": "Premium Sliding Track Cover 3 Mtr aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2000,
+    "costPrice": 1600,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792206/invbsnekej5uxrcy8sey.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1600,
+        "price": 2000
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 1700,
+        "price": 2125
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_9l3rhyfh1",
+    "name": "TELESCOPIC SLIDING 1+1",
+    "category": "sliding-fittings",
+    "description": "High-performance Telescopic Sliding 1+1 sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 9179,
+    "costPrice": 7343,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792083/wg36zgdoz5tckcuzwtxj.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_pm2ayet0y",
+    "name": "TELESCOPIC SLIDING 1+2",
+    "category": "sliding-fittings",
+    "description": "High-performance Telescopic Sliding 1+2 sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 39062,
+    "costPrice": 31250,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792045/mfbqohihf3dvalec8bhn.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_4s5xeumk0",
+    "name": "TELESCOPIC SLIDING 1+3",
+    "category": "sliding-fittings",
+    "description": "High-performance Telescopic Sliding 1+3 sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 48828,
+    "costPrice": 39062,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792090/ehrejthtzhyxhirrz5ec.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_wq6wcbz54",
+    "name": "TELESCOPIC SLIDING 1+4",
+    "category": "sliding-fittings",
+    "description": "High-performance Telescopic Sliding 1+4 sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 60546,
+    "costPrice": 48437,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792237/mro9mcun0efjvri09ffb.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_7s2ketqr7",
+    "name": "SLIDING SYNCRO",
+    "category": "sliding-fittings",
+    "description": "High-performance Sliding Syncro sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 38281,
+    "costPrice": 30625,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792184/xobhqjhis1hyd9kn8ew2.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_qlx36nywj",
+    "name": "SLIDING FOLDING",
+    "category": "sliding-fittings",
+    "description": "High-performance Sliding Folding sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 23202,
+    "costPrice": 18562,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792064/ga3nkajfbnwiyib5vzmy.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_hz0mc56f0",
+    "name": "GHOST SLIDING DOOR 1.5 MTR",
+    "category": "sliding-fittings",
+    "description": "High-performance Ghost Sliding Door 1.5 Mtr sliding system designed for smooth sliding action, high load-bearing capacity, and whisper-quiet performance. Perfect for modern wardrobes and partition doors.",
+    "price": 19531,
+    "costPrice": 15625,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792110/rab3bduirpjv5lvq672e.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_a2b9wl88c",
+    "name": "D HANDLE",
+    "category": "profiles",
+    "description": "Premium D Handle aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 1601,
+    "costPrice": 1281,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792150/m0cxe44bnnkksshtys2u.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1281,
+        "price": 1601
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 1281,
+        "price": 1601
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_0mvsenwu0",
+    "name": "D HANDLE WITH LATCH",
+    "category": "profiles",
+    "description": "Premium D Handle With Latch aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 2344,
+    "costPrice": 1875,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792099/tpqxyebvexihhzcq8aap.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1875,
+        "price": 2344
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 1875,
+        "price": 2344
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_s0dyekonl",
+    "name": "MORTISE LOCK 16 X 45",
+    "category": "profiles",
+    "description": "Premium Mortise Lock 16 X 45 aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 7812,
+    "costPrice": 6250,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792102/ooyfxeoabdsccmpd4in8.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 6250,
+        "price": 7812
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 6718,
+        "price": 8398
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_1t8j0f68r",
+    "name": "SLIDING LOCK 16X45",
+    "category": "profiles",
+    "description": "Premium Sliding Lock 16X45 aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 8984,
+    "costPrice": 7187,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792038/jgfghyz6pqhmdnkgx3uw.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 7187,
+        "price": 8984
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 7656,
+        "price": 9570
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_tt56jqxk7",
+    "name": "G HANDLE END CAP",
+    "category": "profiles",
+    "description": "Premium G Handle End Cap aluminum profile designed for sleek, handle-less modular cabinetry. Delivers architectural styling, easy installation, and structural strength.",
+    "price": 75,
+    "costPrice": 60,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792113/cayd2lcjdlzdevsl77dn.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 60,
+        "price": 75
+      },
+      {
+        "size": "ROSE GOLD",
+        "costPrice": 60,
+        "price": 75
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 60,
+        "price": 75
+      },
+      {
+        "size": "ANTIQUE",
+        "costPrice": 60,
+        "price": 75
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_vd2ovygga",
+    "name": "45 MM CONNECTOR",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade 45 Mm Connector hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 105,
+    "costPrice": 84,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792092/n5nsjp2g8vpsw4xfxm4t.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_xge0zmjyy",
+    "name": "L CONNECTOR 16X45",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade L Connector 16X45 hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 1750,
+    "costPrice": 1400,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792124/hxpblinzc3d3n8i0xbbh.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_4ilo0qiv9",
+    "name": "DIVIDER CONNECTOR 16X45",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Divider Connector 16X45 hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 150,
+    "costPrice": 120,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792186/nncxjt4qv4u1kjrb13yk.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_hjufynynd",
+    "name": "GOLA CONNECTOR",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Gola Connector hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 156,
+    "costPrice": 125,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792145/honvfddlav40xzbb2fis.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_rq3bukheq",
+    "name": "8 MM GASKET 16X45",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade 8 Mm Gasket 16X45 hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 194,
+    "costPrice": 155,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792055/zfohoaqenpucgl3weino.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_zih6f1f66",
+    "name": "BRUSH SEAL",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Brush Seal hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 119,
+    "costPrice": 95,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792122/djpvrwrcrltckmi1ogkb.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 95,
+        "price": 119
+      },
+      {
+        "size": "GREY",
+        "costPrice": 95,
+        "price": 119
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_l9lz71mq0",
+    "name": "SLIDING GASKET",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Sliding Gasket hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 150,
+    "costPrice": 120,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792169/crjjfwj1jdil8f8jb8yv.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_n0r8udwo4",
+    "name": "LEFT/RIGHT PIVOT 16 X 45",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Left/Right Pivot 16 X 45 hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 2440,
+    "costPrice": 1952,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792126/hdklm6zl56wmyljlogry.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 1952,
+        "price": 2440
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 2108,
+        "price": 2635
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_o3mcebzy8",
+    "name": "TOP/BOTTOM PIVOT 16 X 45",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Top/Bottom Pivot 16 X 45 hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 2250,
+    "costPrice": 1800,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792220/h2pets1trdxep3x6fchg.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": []
+  },
+  {
+    "id": "prod_1781792242150_w9wyw5lhi",
+    "name": "FLOOR SPRING",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Floor Spring hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 4812,
+    "costPrice": 3850,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792158/htxdpej6jimjsytmjxpv.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "80 KG",
+        "costPrice": 3850,
+        "price": 4812
+      },
+      {
+        "size": "120KG",
+        "costPrice": 5550,
+        "price": 6938
+      }
+    ]
+  },
+  {
+    "id": "prod_1781792242150_rke6c27ai",
+    "name": "BUTTERFLY HINGES",
+    "category": "furniture-fixtures",
+    "description": "Professional-grade Butterfly Hinges hardware fixture engineered for exceptional durability, structural integrity, and smooth movement. Perfect for high-end cabinets, beds, and modular furniture.",
+    "price": 741,
+    "costPrice": 593,
+    "images": [
+      "https://res.cloudinary.com/da1ebddse/image/upload/v1781792139/exqx6nejyqmlwa6iltxr.jpg"
+    ],
+    "featured": false,
+    "status": "published",
+    "createdAt": "2026-06-18T14:00:00+00:00",
+    "updatedAt": "2026-06-18T14:00:00+00:00",
+    "variants": [
+      {
+        "size": "BLACK",
+        "costPrice": 593,
+        "price": 741
+      },
+      {
+        "size": "BRUSH GOLD",
+        "costPrice": 656,
+        "price": 820
+      }
+    ]
+  }
+]

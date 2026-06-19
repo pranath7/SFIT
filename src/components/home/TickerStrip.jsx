@@ -13,7 +13,7 @@ const TickerStrip = () => {
   ];
 
   return (
-    <div className="w-full bg-[#f8fafc] border-y border-[#e2e8f0] py-4 overflow-hidden relative">
+    <div className="w-full bg-[#0b192e] border-y border-[#1b2d4a] py-4 overflow-hidden relative">
       <div className="marquee-container">
         <div className="marquee-content gap-0 flex items-center">
           {[1, 2, 3, 4].map((i) => (
