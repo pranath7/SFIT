@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://s-fit.shop/sitemap.xml
+Sitemap: https://sfitkitchen.com/sitemap.xml
