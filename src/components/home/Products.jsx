@@ -327,7 +327,7 @@ const Products = () => {
                 onClick={() => setActiveCategory('all')}
                 className={`w-full text-left font-sans font-bold tracking-tight text-lg py-2.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-between ${
                   activeCategory === 'all'
-                    ? 'bg-slate-light text-primary font-semibold shadow-sm border border-[#e2e8f0]'
+                    ? 'bg-primary text-white font-semibold shadow-md'
                     : 'text-charcoal hover:bg-slate-light/50 hover:text-primary'
                 }`}
               >
@@ -342,7 +342,7 @@ const Products = () => {
                     onClick={() => setActiveCategory(cat.id)}
                     className={`w-full text-left font-sans font-bold tracking-tight text-lg py-2.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-between ${
                       activeCategory === cat.id
-                        ? 'bg-slate-light text-primary font-semibold shadow-sm border border-[#e2e8f0]'
+                        ? 'bg-primary text-white font-semibold shadow-md'
                         : 'text-charcoal hover:bg-slate-light/50 hover:text-primary'
                     }`}
                   >

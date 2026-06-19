@@ -19,8 +19,8 @@ html {
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: #050d1a;
-  color: #f1f5f9;
+  background-color: #ffffff;
+  color: #1e293b;
   overflow-x: hidden;
 }
 
@@ -550,57 +550,6 @@ body {
   z-index: 2;
 }
 
-/* ===== DARK BLUE & BLUE GREY OVERRIDES ===== */
-.bg-white, .bg-white\/95 {
-  background-color: #050d1a !important;
-}
 
-.bg-slate-light, .bg-slate-50, .bg-slate-100 {
-  background-color: #0b192e !important;
-}
-
-/* Text color overrides */
-.text-charcoal, .text-slate-800, .text-slate-900, .text-slate-700, .text-slate-600 {
-  color: #e2e8f0 !important;
-}
-
-.text-slate-body, .text-slate-500 {
-  color: #94a3b8 !important;
-}
-
-/* Border overrides */
-.border-slate-100, .border-slate-200, .border-slate-300, .border-\[\#e2e8f0\] {
-  border-color: #1b2d4a !important;
-}
-
-/* Form inputs & interactive items */
-input, textarea, select {
-  background-color: #0d1b2a !important;
-  color: #f1f5f9 !important;
-  border-color: #1b2d4a !important;
-}
-
-/* Glassmorphism & card backdrops */
-.glass {
-  background: rgba(11, 25, 46, 0.75) !important;
-  border: 1px solid rgba(27, 59, 111, 0.25) !important;
-}
-
-.hexagon-inner, .hexagon-icon-inner, .modal-card, .admin-card, .admin-sidebar {
-  background: #0b192e !important;
-}
-
-.admin-topbar {
-  background: rgba(11, 25, 46, 0.85) !important;
-  border-bottom-color: #1b2d4a !important;
-}
-
-/* Scrollbar customization */
-::-webkit-scrollbar-track {
-  background: #050d1a !important;
-}
-::-webkit-scrollbar-thumb {
-  background: #1b3b6f !important;
-}
 
 

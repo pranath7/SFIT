@@ -35,11 +35,11 @@ const CTABanner = () => {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="section-reveal">
-          <span className="text-primary text-xs font-mono tracking-[0.3em] uppercase mb-4 block">Let's Connect</span>
-          <h2 className="font-sans font-bold tracking-tight text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-charcoal leading-tight mb-6">
+          <span className="text-blue-400 text-xs font-mono tracking-[0.3em] uppercase mb-4 block">Let's Connect</span>
+          <h2 className="font-sans font-bold tracking-tight text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight mb-6">
             Have a Project?<br />Let's Talk Hardware.
           </h2>
-          <p className="text-slate-body text-lg max-w-2xl mx-auto mb-10 font-body">
+          <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-10 font-body">
             Whether you're fitting out a single kitchen or sourcing for a 500-unit development, our team is ready to help with product selection, pricing, and fulfillment.
           </p>
 

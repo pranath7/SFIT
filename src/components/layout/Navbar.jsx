@@ -21,14 +21,18 @@ const Navbar = () => {
 
   const navLinks = [
     { label: 'Home', href: '#home' },
-    { label: 'Categories', href: '#categories' },
+    { label: 'About Us', href: '#about' },
     { label: 'Products', href: '#products' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Catalogue', href: '#catalogue' },
+    { label: 'Contact Us', href: '#contact' },
   ];
 
   const scrollTo = (href) => {
     setMobileOpen(false);
+    if (href === '#catalogue') {
+      window.open(getWhatsAppLink(), '_blank');
+      return;
+    }
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
@@ -55,6 +59,7 @@ const Navbar = () => {
                 className={`w-auto object-contain transition-all duration-500 group-hover:scale-[1.02] ${
                   scrolled ? 'h-14 lg:h-[60px]' : 'h-28 lg:h-[160px]'
                 }`}
+                style={{ filter: 'brightness(0) saturate(100%) invert(15%) sepia(96%) saturate(1478%) hue-rotate(204deg) brightness(92%) contrast(104%)' }}
               />
             </a>
 
@@ -62,10 +67,10 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-                  className="text-charcoal hover:text-primary text-sm font-body tracking-wide transition-all duration-300 relative group flex items-center gap-1.5"
+                  className="text-charcoal hover:text-primary text-sm font-sans font-bold uppercase tracking-wider transition-all duration-300 relative group flex items-center gap-1.5"
                 >
                   <svg className="w-2.5 h-2.5 text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 fill-primary/10 group-hover:rotate-30" viewBox="0 0 100 100">
                     <polygon points="50,5 95,30 95,80 50,95 5,80 5,30" stroke="currentColor" strokeWidth="12"/>
@@ -79,22 +84,26 @@ const Navbar = () => {
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href={getWhatsAppLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg border border-whatsapp/30 text-whatsapp text-sm font-medium hover:bg-whatsapp/5 transition-all duration-300"
-                aria-label="Chat on WhatsApp"
+                href="tel:+919962285822"
+                className="flex items-center gap-2 px-4 py-2 bg-primary hover:bg-[#152e56] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                aria-label="Call S-FIT"
               >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                WhatsApp
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                </svg>
+                Call Us
               </a>
               <a
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 bg-charcoal hover:bg-primary text-white text-sm font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                className="flex items-center gap-2 px-4 py-2 bg-whatsapp hover:bg-whatsapp/90 text-white text-xs font-sans font-bold tracking-wider uppercase rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                aria-label="Chat on WhatsApp"
               >
-                Get Quote
+                <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
               </a>
             </div>
 
@@ -123,30 +132,31 @@ const Navbar = () => {
         <div className={`absolute left-0 right-0 bg-white border-b border-slate-200 p-6 flex flex-col gap-4 transition-all duration-500 ${scrolled ? 'top-20' : 'top-32'} ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}`}>
           {navLinks.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
               onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-              className="text-charcoal hover:text-primary text-lg font-sans font-bold tracking-tight py-2 border-b border-slate-100"
+              className="text-charcoal hover:text-primary text-base font-sans font-bold uppercase tracking-wider py-2 border-b border-slate-100"
             >
               {link.label}
             </a>
           ))}
-          <div className="flex gap-3 mt-4">
+          <div className="flex flex-col sm:flex-row gap-3 mt-4">
             <a
-              href={getWhatsAppLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg bg-whatsapp/10 text-whatsapp font-semibold"
+              href="tel:+919962285822"
+              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg bg-primary text-white font-semibold text-sm transition-colors hover:bg-[#152e56]"
             >
-              WhatsApp Us
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+              </svg>
+              Call Us: +91 99622 85822
             </a>
             <a
               href={getWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center py-3 rounded-lg bg-charcoal text-white font-semibold"
+              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg bg-whatsapp text-white font-semibold text-sm transition-colors hover:bg-whatsapp/90"
             >
-              Get Quote
+              Chat on WhatsApp
             </a>
           </div>
         </div>

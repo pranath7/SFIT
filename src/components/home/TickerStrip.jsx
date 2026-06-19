@@ -17,10 +17,10 @@ const TickerStrip = () => {
       <div className="marquee-container">
         <div className="marquee-content gap-0 flex items-center">
           {[1, 2, 3, 4].map((i) => (
-            <span key={i} className="text-charcoal text-xs font-mono tracking-widest whitespace-nowrap px-4 flex items-center gap-8">
+            <span key={i} className="text-blue-100/90 text-xs font-mono tracking-widest whitespace-nowrap px-4 flex items-center gap-8">
               {items.map((item) => (
                 <span key={item} className="flex items-center gap-8">
-                  <span className="text-primary">✦</span>
+                  <span className="text-blue-400">✦</span>
                   <span>{item}</span>
                 </span>
               ))}
