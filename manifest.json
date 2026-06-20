@@ -8,6 +8,8 @@
   "background_color": "#050d1a",
   "theme_color": "#050d1a",
   "orientation": "portrait",
+  "dir": "ltr",
+  "lang": "en",
   "categories": [
     "shopping",
     "business"
@@ -22,7 +24,7 @@
       "purpose": "any"
     },
     {
-      "src": "/logo-192.png",
+      "src": "/maskable-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"
@@ -34,10 +36,36 @@
       "purpose": "any"
     },
     {
-      "src": "/logo-512.png",
+      "src": "/maskable-512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Products Catalog",
+      "short_name": "Products",
+      "description": "Browse modular kitchen accessories and wardrobe sliding profiles.",
+      "url": "/#products",
+      "icons": [
+        {
+          "src": "/logo-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch or call S-FIT Kitchen & Hardware.",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/logo-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
   "screenshots": [
