@@ -78,7 +78,7 @@ const Hero = () => {
             className="text-slate-300 text-lg sm:text-xl max-w-lg leading-relaxed font-body"
             style={{ animation: 'fadeUp 0.8s ease-out 0.5s both' }}
           >
-            Discover premium modular kitchen accessories, sliding wardrobe fittings, and architectural profiles by S-FIT Kitchen & Hardware. The leading choice for S Fit Hardware & Kitchen in Chennai.
+            Discover premium modular kitchen accessories, sliding wardrobe fittings, and architectural profiles by S-FIT Kitchen & Hardware. Your premier choice for the best hardware shop in Chennai.
           </p>
 
           {/* CTAs */}
