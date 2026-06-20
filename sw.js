@@ -7,6 +7,8 @@ const ASSETS_TO_CACHE = [
   '/logo-192.png',
   '/logo-512.png',
   '/logo.png',
+  '/screenshot-desktop.png',
+  '/screenshot-mobile.png',
   '/robots.txt'
 ];
 
