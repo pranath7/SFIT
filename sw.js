@@ -11,6 +11,7 @@ const ASSETS_TO_CACHE = [
   '/maskable-512.png',
   '/screenshot-desktop.png',
   '/screenshot-mobile.png',
+  '/privacy.html',
   '/robots.txt'
 ];
 
