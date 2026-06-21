@@ -105,6 +105,20 @@
           </p>
         </footer>
       </main>
+      <!-- Premium Splash Loading Screen (covers fallback text until React mounts) -->
+      <div id="loading-splash" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #050d1a; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 99999; font-family: sans-serif;">
+        <img src="/logo.png" alt="S-FIT Logo" style="height: 80px; width: auto; margin-bottom: 24px; animation: pulse 1.5s infinite;" />
+        <div style="width: 32px; height: 32px; border: 3px solid rgba(255,255,255,0.1); border-radius: 50%; border-top-color: #3b82f6; animation: spin 1s linear infinite;"></div>
+        <style>
+          @keyframes spin {
+            to { transform: rotate(360deg); }
+          }
+          @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(0.98); }
+            50% { opacity: 1; transform: scale(1.02); }
+          }
+        </style>
+      </div>
     </div>
     <script>
       if ('serviceWorker' in navigator) {
